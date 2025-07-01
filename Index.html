@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    body {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 15px;
+    }
+
+    li {
+      margin-top: 6px;
+    }
+
+    .toggle {
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+    }
+
+    .level-compania {
+      font-family: Arial;
+      font-size: 13px;
+      color: #004d00;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    .level-riesgo {
+      font-family: Arial;
+      font-size: 12px;
+      color: #990000;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .level-causa {
+      font-family: Arial;
+      font-size: 11px;
+      color: #e67300;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .level-control {
+      font-family: Arial;
+      font-size: 10px;
+      color: #004d00;
+      margin-top: 6px;
+      margin-left: 5px;
+    }
+
+    .detalle-causa {
+      font-family: Arial;
+      font-size: 10px;
+      margin-left: 10px;
+      color: #444;
+      margin-top: 4px;
+    }
+
+    .nested {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .arrow::before {
+      content: "▶ ";
+      display: inline-block;
+      transform: rotate(0deg);
+      transition: transform 0.2s;
+    }
+
+    .arrow.down::before {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+    <div style="
+  width: 100vw;
+  background-color: rgba(0, 77, 0, 0.9); /* verde oscuro opaco */
+  color: white;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+">
+  <!-- Imagen izquierda -->
+  <img src="https://raw.githubusercontent.com/DAVIDUBAQUEGARCIA10/PROYECTO_ARIS/refs/heads/main/BANNER/blob.png"
+       style="width: 6rem; height: 6rem; position: absolute; left: 1rem;" alt="Logo izquierda" />
+
+  <!-- Título centrado -->
+  <h2 style="margin: 0; font-size: 1.8rem;">Coherencia de Matrices de Riesgos</h2>
+
+
+</div>
+
+
+
+  <div id="treeContainer">Cargando coherencia de Matriz...</div>
+
+  <script>
+    function createTree(data) {
+      const container = document.getElementById('treeContainer');
+      container.innerHTML = '';
+      const ul = document.createElement('ul');
+
+      for (const compania in data) {
+        const liComp = document.createElement('li');
+        const spanComp = document.createElement('span');
+        spanComp.classList.add('toggle', 'arrow', 'level-compania');
+        const coherencia = data[compania].coherencia;
+        spanComp.innerHTML = `📅 ${compania} — Coherencia: ${coherencia}%`;
+
+        const ulRiesgos = document.createElement('ul');
+        ulRiesgos.classList.add('nested');
+
+        const riesgos = data[compania].riesgos;
+
+        for (const riesgo in riesgos) {
+          const riesgoData = riesgos[riesgo];
+          const liRiesgo = document.createElement('li');
+          const spanRiesgo = document.createElement('span');
+          spanRiesgo.classList.add('toggle', 'arrow', 'level-riesgo');
+          const califRiesgo = riesgoData.calificacionRiesgo ? ` — Calificación: ${riesgoData.calificacionRiesgo}` : '';
+          spanRiesgo.innerHTML = `⚠️ ${riesgo}${califRiesgo}`;
+
+          const ulCausas = document.createElement('ul');
+          ulCausas.classList.add('nested');
+
+          for (const causa in riesgoData.causas) {
+            const causaData = riesgoData.causas[causa];
+
+            const liCausa = document.createElement('li');
+            const spanCausa = document.createElement('span');
+            spanCausa.classList.add('toggle', 'arrow', 'level-causa');
+            spanCausa.innerHTML = `🚨 ${causa}`;
+
+            const ulDetallesYControles = document.createElement('ul');
+            ulDetallesYControles.classList.add('nested');
+
+            const detalles = causaData.detalles;
+
+            const ordenCampos = [
+              "Sujeto",
+              "Acción",
+              "Objeto determinado",
+              "Contexto delictivo específico",
+              "4 factores de riesgo",
+              "Justificación",
+              "Calificación Causa"
+            ];
+
+            ordenCampos.forEach(key => {
+              const liDetalle = document.createElement('li');
+              liDetalle.classList.add('detalle-causa');
+              liDetalle.innerHTML = `<strong>${key}:</strong> ${detalles[key] || ''}`;
+              ulDetallesYControles.appendChild(liDetalle);
+            });
+
+            causaData.controles.forEach(ctrl => {
+              const liControl = document.createElement('li');
+              liControl.classList.add('level-control');
+              const calif = ctrl.calificacion ? ` — Calificación: ${ctrl.calificacion}` : '';
+              liControl.innerHTML = `🎯 ${ctrl.texto}${calif}`;
+              ulDetallesYControles.appendChild(liControl);
+            });
+
+            spanCausa.addEventListener('click', () => {
+              ulDetallesYControles.classList.toggle('active');
+              spanCausa.classList.toggle('down');
+            });
+
+            liCausa.appendChild(spanCausa);
+            liCausa.appendChild(ulDetallesYControles);
+            ulCausas.appendChild(liCausa);
+          }
+
+          spanRiesgo.addEventListener('click', () => {
+            ulCausas.classList.toggle('active');
+            spanRiesgo.classList.toggle('down');
+          });
+
+          liRiesgo.appendChild(spanRiesgo);
+          liRiesgo.appendChild(ulCausas);
+          ulRiesgos.appendChild(liRiesgo);
+        }
+
+        spanComp.addEventListener('click', () => {
+          ulRiesgos.classList.toggle('active');
+          spanComp.classList.toggle('down');
+        });
+
+        liComp.appendChild(spanComp);
+        liComp.appendChild(ulRiesgos);
+        ul.appendChild(liComp);
+      }
+
+      container.appendChild(ul);
+    }
+
+    google.script.run.withSuccessHandler(createTree).getTreeData();
+  </script>
+</body>
+</html>
