@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Validador de Coherencia - Matriz LA/FT/FPADM</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --primary:#16a34a;
+      --primary-soft:#22c55e;
+      --primary-dark:#065f46;
+      --text:#0f172a;
+      --muted:#6b7280;
+      --danger:#b91c1c;
+      --warning:#92400e;
+      --blue:#1d4ed8;
+      --border:#e5e7eb;
+      --border-green:#d1fae5;
+      --bg-soft:#f9fafb;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%,rgba(34,197,94,.22) 0%,rgba(255,255,255,1) 55%),
+        radial-gradient(circle at 80% 80%,rgba(16,185,129,.18) 0%,rgba(255,255,255,1) 60%);
+      color:var(--text);
+    }
+
+    .header {
+      text-align:center;
+      margin:24px 0 18px;
+      padding:0 16px;
+    }
+
+    .header h1 {
+      margin:0;
+      font-size:32px;
+      color:var(--primary);
+      letter-spacing:-.03em;
+    }
+
+    .header p {
+      margin:6px auto 0;
+      color:var(--muted);
+      font-size:14px;
+      max-width:980px;
+      line-height:1.55;
+    }
+
+    .container {
+      max-width:1480px;
+      margin:0 auto 40px;
+      padding:0 16px 40px;
+    }
+
+    .card {
+      border-radius:16px;
+      border:1px solid var(--border);
+      background:#fff;
+      box-shadow:0 12px 35px rgba(15,23,42,.06);
+      padding:20px 24px 24px;
+      margin-top:16px;
+    }
+
+    .section-title {
+      font-size:15px;
+      font-weight:700;
+      margin-bottom:10px;
+      color:#111827;
+    }
+
+    .section-subtitle {
+      font-size:12px;
+      color:var(--muted);
+      margin-top:-4px;
+      margin-bottom:14px;
+      line-height:1.45;
+    }
+
+    .info-box {
+      background:#f0fdf4;
+      border:1px solid #bbf7d0;
+      border-radius:10px;
+      padding:14px 16px;
+      margin-bottom:18px;
+      color:#166534;
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    .stats {
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+      margin:16px 0;
+    }
+
+    @media(max-width:1100px) { .stats { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:520px) { .stats { grid-template-columns:1fr; } }
+
+    .stats.stats-3 { grid-template-columns:repeat(3,1fr); }
+    @media(max-width:700px) { .stats.stats-3 { grid-template-columns:1fr; } }
+
+    .gauges {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin:8px 0 16px;
+    }
+    @media(max-width:600px) { .gauges { grid-template-columns:1fr; } }
+
+    .gauge-card {
+      border-radius:14px;
+      border:1px solid var(--border-green);
+      background:#fff;
+      box-shadow:0 4px 16px rgba(16,163,74,.08);
+      padding:14px 16px 6px;
+      text-align:center;
+    }
+    .gauge-title {
+      font-size:11px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin-bottom:4px;
+    }
+    .liquidFillGaugeText { font-family:Inter,Helvetica,sans-serif; font-weight:bold; }
+
+    .stat {
+      padding:16px;
+      border-radius:14px;
+      background:#fff;
+      border:1px solid var(--border-green);
+      box-shadow:0 4px 16px rgba(16,163,74,.08);
+    }
+
+    .stat span {
+      display:block;
+      font-size:10px;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      color:var(--muted);
+      margin-bottom:7px;
+    }
+
+    .stat strong {
+      display:block;
+      font-size:28px;
+      color:var(--primary-dark);
+      letter-spacing:-.04em;
+    }
+
+    .stat.danger strong { color:var(--danger); }
+    .stat.warning strong { color:var(--warning); }
+    .stat.blue strong { color:var(--blue); }
+
+    .filters {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    input, select, textarea {
+      padding:9px 10px;
+      min-height:40px;
+      border-radius:8px;
+      border:1px solid #d1d5db;
+      background:#f9fafb;
+      font-size:14px;
+      outline:none;
+      font-family:inherit;
+      color:#111827;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color:var(--primary);
+      box-shadow:0 0 0 3px rgba(34,197,94,.25);
+      background:#fff;
+    }
+
+    .btn-primary, .btn-secondary, .btn-danger {
+      border-radius:999px;
+      padding:9px 18px;
+      font-size:13px;
+      cursor:pointer;
+      font-weight:600;
+      font-family:inherit;
+    }
+
+    .btn-primary {
+      border:none;
+      background:var(--primary);
+      color:#fff;
+    }
+
+    .btn-primary:hover { background:#15803d; }
+    .btn-primary:disabled { opacity:.5; cursor:not-allowed; }
+
+    .btn-secondary {
+      border:1px solid #d1d5db;
+      background:#f3f4f6;
+      color:#111827;
+    }
+
+    .btn-secondary:hover { background:#e5e7eb; }
+
+    .btn-ia {
+      border:none;
+      background:var(--primary);
+      color:#fff;
+      border-radius:999px;
+      padding:7px 14px;
+      font-size:12px;
+      font-weight:600;
+      cursor:pointer;
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      font-family:inherit;
+    }
+
+    .btn-ia:hover { background:#15803d; }
+
+    .btn-estado {
+      border:1px solid #d1d5db;
+      border-radius:999px;
+      padding:5px 12px;
+      font-size:11px;
+      font-weight:600;
+      cursor:pointer;
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap:4px;
+      font-family:inherit;
+      background:#fff;
+    }
+    .btn-estado.completar { border-color:var(--primary); color:var(--primary-dark); }
+    .btn-estado.completar:hover { background:#f0fdf4; }
+    .btn-estado.reabrir { border-color:#fdba74; color:#9a3412; }
+    .btn-estado.reabrir:hover { background:#fff7ed; }
+
+    .table-wrap {
+      overflow-x:auto;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      max-height:620px;
+      margin-top:16px;
+    }
+
+    table {
+      width:100%;
+      border-collapse:collapse;
+      font-size:12px;
+      min-width:1100px;
+    }
+
+    thead th {
+      padding:9px 10px;
+      background:var(--primary-dark);
+      color:#ecfdf5;
+      text-align:left;
+      text-transform:uppercase;
+      font-size:11px;
+      white-space:nowrap;
+      position:sticky;
+      top:0;
+      z-index:2;
+    }
+
+    tbody td {
+      padding:8px 10px;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+      color:#111827;
+    }
+
+    tbody tr:hover td { background:#f0fdf4; }
+
+    .id-cell {
+      font-weight:700;
+      color:var(--primary-dark);
+      width:44px;
+    }
+
+    .text-cell { max-width:300px; }
+
+    .texto-truncado {
+      display:-webkit-box;
+      -webkit-line-clamp:2;
+      line-clamp:2;
+      -webkit-box-orient:vertical;
+      overflow:hidden;
+      line-height:1.4;
+    }
+
+    .badge {
+      display:inline-block;
+      padding:2px 9px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:600;
+      white-space:nowrap;
+    }
+
+    .badge-rojo { background:#fee2e2; color:#991b1b; }
+    .badge-amarillo { background:#fef9c3; color:#92400e; }
+    .badge-verde { background:#dcfce7; color:#166534; }
+    .badge-riesgo { background:#dbeafe; color:#1e40af; }
+    .badge-causa { background:#f3e8ff; color:#7b1fa2; }
+    .badge-control { background:#dcfce7; color:#166534; }
+
+    .empty {
+      padding:48px 20px;
+      text-align:center;
+      color:var(--muted);
+      border:1px dashed #d1d5db;
+      border-radius:14px;
+      background:#f9fafb;
+      font-size:13px;
+    }
+
+    .spinner {
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      border:5px solid #e5e7eb;
+      border-top-color:var(--primary);
+      animation:spin .8s linear infinite;
+      margin:0 auto 14px;
+    }
+
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    @keyframes flashRow {
+      0% { background:#bbf7d0; }
+      100% { background:transparent; }
+    }
+    tbody tr.flash td { animation:flashRow 1.6s ease-out; }
+
+    /* MODAL */
+    .modal-overlay {
+      display:none;
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.42);
+      z-index:9998;
+      place-items:center;
+      padding:20px;
+      backdrop-filter:blur(4px);
+    }
+
+    .modal-overlay.active { display:grid; }
+
+    .modal-card {
+      width:min(920px,100%);
+      max-height:92vh;
+      overflow-y:auto;
+      background:#fff;
+      border-radius:18px;
+      border:1px solid var(--border-green);
+      box-shadow:0 24px 70px rgba(15,23,42,.22);
+      padding:22px 24px 24px;
+    }
+
+    .modal-header {
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      align-items:flex-start;
+      margin-bottom:16px;
+      border-bottom:1px solid var(--border);
+      padding-bottom:14px;
+    }
+
+    .modal-header h2 {
+      margin:0;
+      color:var(--primary);
+      font-size:22px;
+    }
+
+    .modal-close {
+      border:none;
+      background:#f3f4f6;
+      color:#111827;
+      width:34px;
+      height:34px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:18px;
+      font-weight:700;
+    }
+
+    .modal-section { margin-bottom:20px; }
+
+    .modal-section-title {
+      font-size:14px;
+      font-weight:700;
+      color:#111827;
+      margin-bottom:8px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .text-box {
+      background:#f9fafb;
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:14px;
+      line-height:1.6;
+      font-size:13px;
+      max-height:140px;
+      overflow-y:auto;
+    }
+
+    .loading {
+      display:none;
+      text-align:center;
+      padding:26px;
+    }
+
+    .loading p { color:var(--muted); font-size:13px; }
+
+    .result { display:none; margin-top:18px; }
+
+    .result-block {
+      border-radius:14px;
+      padding:18px;
+      border:1px solid var(--border-green);
+      background:#f8fffb;
+    }
+
+    .result-block.error {
+      border-color:#fecaca;
+      background:#fef2f2;
+    }
+
+    .coherence-banner {
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding:14px 18px;
+      border-radius:12px;
+      margin-bottom:16px;
+      font-weight:700;
+    }
+
+    .coherence-Alto { background:#dcfce7; color:#166534; }
+    .coherence-Medio { background:#fef9c3; color:#92400e; }
+    .coherence-Bajo { background:#fee2e2; color:#991b1b; }
+
+    .coherence-banner .pct { font-size:26px; }
+
+    .assess-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:12px;
+      margin-bottom:16px;
+    }
+
+    @media(max-width:760px) { .assess-grid { grid-template-columns:1fr; } }
+
+    .assess-card {
+      border-radius:12px;
+      border:1px solid var(--border);
+      background:#fff;
+      padding:14px;
+    }
+
+    .assess-card h4 {
+      margin:0 0 10px;
+      font-size:13px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .score-chip {
+      display:inline-block;
+      width:26px;
+      height:26px;
+      border-radius:50%;
+      text-align:center;
+      line-height:26px;
+      font-weight:800;
+      font-size:13px;
+    }
+
+    .score-1 { background:#fee2e2; color:#991b1b; }
+    .score-2 { background:#fef9c3; color:#92400e; }
+    .score-3 { background:#dcfce7; color:#166534; }
+
+    .assess-row {
+      display:flex;
+      justify-content:space-between;
+      font-size:11.5px;
+      padding:4px 0;
+      border-bottom:1px solid #f1f5f9;
+    }
+
+    .assess-row:last-child { border-bottom:none; }
+
+    .assess-row .k { color:var(--muted); }
+    .assess-row .v { font-weight:600; color:#111827; text-align:right; }
+
+    .findings {
+      font-size:12px;
+      color:#374151;
+      line-height:1.5;
+      margin-top:8px;
+      padding-top:8px;
+      border-top:1px solid #f1f5f9;
+    }
+
+    .reco-list {
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .reco-list li {
+      font-size:12.5px;
+      padding:7px 0;
+      line-height:1.45;
+      display:flex;
+      gap:8px;
+      align-items:flex-start;
+    }
+
+    .reco-list.strengths li::before { content:"✓"; color:var(--primary); font-weight:800; }
+    .reco-list.weaknesses li::before { content:"✗"; color:var(--danger); font-weight:800; }
+    .reco-list.recos li::before { content:"→"; color:var(--blue); font-weight:800; }
+
+    .reco-group { margin-bottom:14px; }
+    .reco-group h5 {
+      margin:0 0 4px;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      color:var(--muted);
+    }
+
+    details.raw {
+      margin-top:14px;
+      font-size:12px;
+    }
+
+    details.raw pre {
+      background:#0f172a;
+      color:#d1fae5;
+      padding:14px;
+      border-radius:10px;
+      overflow-x:auto;
+      font-size:11px;
+    }
+
+    @media(max-width:700px) {
+      .header h1 { font-size:24px; }
+      .modal-card { padding:18px 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🔐 Validador de Coherencia</h1>
+    <p>Matriz de Riesgo LA/FT/FPADM según Metodología SFC · Guía de Identificación de Riesgos LAFT V3 (Jun 2026)</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="section-title">Base de Datos de Riesgos, Causas y Controles</div>
+      <div class="section-subtitle">
+        Selecciona un registro y pulsa <strong>Validar con IA</strong> para desglosar la estructura
+        de Riesgo, Causa y Control según los criterios SFC, usando GPT Nano.
+      </div>
+
+      <div class="info-box">
+        <i class="fa-solid fa-circle-info"></i>
+        La IA evalúa: sujeto, acción, objeto determinado, delito fuente y tipología (Causa);
+        alertamiento, análisis, reporte y toma de decisiones (Control); y la coherencia Control ≤ Causa.
+      </div>
+
+      <div class="stats stats-3">
+        <div class="stat"><span>Total Registros</span><strong id="statTotal">-</strong></div>
+        <div class="stat warning"><span>Pendientes</span><strong id="statPendientes">-</strong></div>
+        <div class="stat blue"><span>Revisados</span><strong id="statRevisados">-</strong></div>
+      </div>
+      <!-- Valores numéricos de coherencia/avance ocultos: se muestran en los gauges -->
+      <span id="statCoherencia" style="display:none;">-</span>
+      <span id="statAvance" style="display:none;">-</span>
+
+      <div class="gauges">
+        <div class="gauge-card">
+          <div class="gauge-title">Coherencia Global</div>
+          <svg id="gaugeCoherencia" width="100%" height="180"></svg>
+        </div>
+        <div class="gauge-card">
+          <div class="gauge-title">Avance de Revisión</div>
+          <svg id="gaugeAvance" width="100%" height="180"></svg>
+        </div>
+      </div>
+
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Buscar en riesgo, causa o control..." onkeyup="filtrarTabla()" style="flex:1; min-width:220px;">
+        <label style="display:flex; align-items:center; gap:6px; font-size:13px; color:var(--muted); min-height:auto;">
+          <input type="checkbox" id="verCompletados" onchange="filtrarTabla()" style="width:auto; min-height:auto; margin:0;">
+          Mostrar revisados
+        </label>
+        <button class="btn-secondary" onclick="recargarDatos()"><i class="fa-solid fa-rotate"></i> Recargar</button>
+        <button class="btn-primary" onclick="descargarExcel()"><i class="fa-solid fa-file-excel"></i> Descargar Excel</button>
+      </div>
+
+      <div class="table-wrap" id="tableWrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Riesgo</th>
+              <th>Causa</th>
+              <th>Control</th>
+              <th>R</th>
+              <th>C</th>
+              <th>Ctrl</th>
+              <th>Acción</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr><td colspan="9"><div class="empty"><div class="spinner"></div>Cargando datos...</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="validationModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h2>Validación · Registro <span id="recordId">-</span></h2>
+          <p style="margin:5px 0 0; color:var(--muted); font-size:13px;">Desglose estructural según metodología SFC</p>
+        </div>
+        <button class="modal-close" onclick="cerrarModal()">&times;</button>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="badge badge-riesgo">RIESGO</span> Exposición a LA/FT/FPADM</div>
+        <div class="text-box" id="riesgoBox"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="badge badge-causa">CAUSA</span> Escenario de Conducta Delictiva</div>
+        <div class="text-box" id="causaBox"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title"><span class="badge badge-control">CONTROL</span> Mecanismo de Mitigación</div>
+        <div class="text-box" id="controlBox"></div>
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:20px 0;">
+        <button class="btn-secondary" id="btnCalcular" onclick="calcular()" style="padding:11px 22px; font-size:14px;">
+          <i class="fa-solid fa-magnifying-glass-chart"></i> Calcular (analizar)
+        </button>
+        <button class="btn-primary" id="btnGuardar" onclick="guardarCalificacion()" style="padding:11px 22px; font-size:14px;" disabled title="Primero pulsa Calcular">
+          <i class="fa-solid fa-floppy-disk"></i> Guardar y recalificar
+        </button>
+        <button class="btn-secondary" id="btnCompletar" onclick="marcarCompletado()" style="padding:11px 22px; font-size:14px; border-color:var(--primary); color:var(--primary-dark);">
+          <i class="fa-solid fa-clipboard-check"></i> Marcar completado
+        </button>
+      </div>
+
+      <div class="loading" id="modalLoading">
+        <div class="spinner"></div>
+        <p>Analizando con GPT Nano según flujogramas SFC...</p>
+      </div>
+
+      <div class="result" id="modalResult"></div>
+    </div>
+  </div>
+
+  <!-- d3 v3 para los liquid fill gauges -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script>
+    // ===== Liquid Fill Gauge (Curtis Bratton, BSD-2) adaptado a porcentaje =====
+    function liquidFillGaugeDefaultSettings() {
+      return {
+        minValue: 0, maxValue: 100, circleThickness: 0.05, circleFillGap: 0.05,
+        circleColor: "#178BCA", waveHeight: 0.05, waveCount: 1, waveRiseTime: 1000,
+        waveAnimateTime: 18000, waveRise: true, waveHeightScaling: true, waveAnimate: true,
+        waveColor: "#178BCA", waveOffset: 0, textVertPosition: .5, textSize: 1,
+        valueCountUp: true, displayPercent: true, textColor: "#045681", waveTextColor: "#A4DBf8"
+      };
+    }
+    function loadLiquidFillGauge(elementId, value, config) {
+      if (config == null) config = liquidFillGaugeDefaultSettings();
+      var gauge = d3.select("#" + elementId);
+      gauge.selectAll("*").remove();
+      var radius = Math.min(parseInt(gauge.style("width")), parseInt(gauge.style("height"))) / 2;
+      var locationX = parseInt(gauge.style("width")) / 2 - radius;
+      var locationY = parseInt(gauge.style("height")) / 2 - radius;
+      var fillPercent = Math.max(config.minValue, Math.min(config.maxValue, value)) / config.maxValue;
+      var waveHeightScale;
+      if (config.waveHeightScaling) waveHeightScale = d3.scale.linear().range([0, config.waveHeight, 0]).domain([0, 50, 100]);
+      else waveHeightScale = d3.scale.linear().range([config.waveHeight, config.waveHeight]).domain([0, 100]);
+      var textPixels = (config.textSize * radius / 2);
+      var textFinalValue = parseFloat(value).toFixed(2);
+      var textStartValue = config.valueCountUp ? config.minValue : textFinalValue;
+      var percentText = config.displayPercent ? "%" : "";
+      var circleThickness = config.circleThickness * radius;
+      var circleFillGap = config.circleFillGap * radius;
+      var fillCircleMargin = circleThickness + circleFillGap;
+      var fillCircleRadius = radius - fillCircleMargin;
+      var waveHeight = fillCircleRadius * waveHeightScale(fillPercent * 100);
+      var waveLength = fillCircleRadius * 2 / config.waveCount;
+      var waveClipCount = 1 + config.waveCount;
+      var waveClipWidth = waveLength * waveClipCount;
+      var textRounder = function(v) { return Math.round(v); };
+      var data = [];
+      for (var i = 0; i <= 40 * waveClipCount; i++) data.push({ x: i / (40 * waveClipCount), y: (i / 40) });
+      var gaugeCircleX = d3.scale.linear().range([0, 2 * Math.PI]).domain([0, 1]);
+      var gaugeCircleY = d3.scale.linear().range([0, radius]).domain([0, radius]);
+      var waveScaleX = d3.scale.linear().range([0, waveClipWidth]).domain([0, 1]);
+      var waveScaleY = d3.scale.linear().range([0, waveHeight]).domain([0, 1]);
+      var waveRiseScale = d3.scale.linear().range([(fillCircleMargin + fillCircleRadius * 2 + waveHeight), (fillCircleMargin - waveHeight)]).domain([0, 1]);
+      var waveAnimateScale = d3.scale.linear().range([0, waveClipWidth - fillCircleRadius * 2]).domain([0, 1]);
+      var textRiseScaleY = d3.scale.linear().range([fillCircleMargin + fillCircleRadius * 2, (fillCircleMargin + textPixels * 0.7)]).domain([0, 1]);
+      var gaugeGroup = gauge.append("g").attr('transform', 'translate(' + locationX + ',' + locationY + ')');
+      var gaugeCircleArc = d3.svg.arc().startAngle(gaugeCircleX(0)).endAngle(gaugeCircleX(1)).outerRadius(gaugeCircleY(radius)).innerRadius(gaugeCircleY(radius - circleThickness));
+      gaugeGroup.append("path").attr("d", gaugeCircleArc).style("fill", config.circleColor).attr('transform', 'translate(' + radius + ',' + radius + ')');
+      var text1 = gaugeGroup.append("text").text(textRounder(textStartValue) + percentText).attr("class", "liquidFillGaugeText").attr("text-anchor", "middle").attr("font-size", textPixels + "px").style("fill", config.textColor).attr('transform', 'translate(' + radius + ',' + textRiseScaleY(config.textVertPosition) + ')');
+      var clipArea = d3.svg.area().x(function(d) { return waveScaleX(d.x); }).y0(function(d) { return waveScaleY(Math.sin(Math.PI * 2 * config.waveOffset * -1 + Math.PI * 2 * (1 - config.waveCount) + d.y * 2 * Math.PI)); }).y1(function(d) { return (fillCircleRadius * 2 + waveHeight); });
+      var waveGroup = gaugeGroup.append("defs").append("clipPath").attr("id", "clipWave" + elementId);
+      var wave = waveGroup.append("path").datum(data).attr("d", clipArea).attr("T", 0);
+      var fillCircleGroup = gaugeGroup.append("g").attr("clip-path", "url(#clipWave" + elementId + ")");
+      fillCircleGroup.append("circle").attr("cx", radius).attr("cy", radius).attr("r", fillCircleRadius).style("fill", config.waveColor);
+      var text2 = fillCircleGroup.append("text").text(textRounder(textStartValue) + percentText).attr("class", "liquidFillGaugeText").attr("text-anchor", "middle").attr("font-size", textPixels + "px").style("fill", config.waveTextColor).attr('transform', 'translate(' + radius + ',' + textRiseScaleY(config.textVertPosition) + ')');
+      if (config.valueCountUp) {
+        var textTween = function() { var i = d3.interpolate(this.textContent, textFinalValue); return function(t) { this.textContent = textRounder(i(t)) + percentText; }; };
+        text1.transition().duration(config.waveRiseTime).tween("text", textTween);
+        text2.transition().duration(config.waveRiseTime).tween("text", textTween);
+      }
+      var waveGroupXPosition = fillCircleMargin + fillCircleRadius * 2 - waveClipWidth;
+      if (config.waveRise) {
+        waveGroup.attr('transform', 'translate(' + waveGroupXPosition + ',' + waveRiseScale(0) + ')').transition().duration(config.waveRiseTime).attr('transform', 'translate(' + waveGroupXPosition + ',' + waveRiseScale(fillPercent) + ')').each("start", function() { wave.attr('transform', 'translate(1,0)'); });
+      } else waveGroup.attr('transform', 'translate(' + waveGroupXPosition + ',' + waveRiseScale(fillPercent) + ')');
+      if (config.waveAnimate) animateWave();
+      function animateWave() {
+        wave.attr('transform', 'translate(' + waveAnimateScale(wave.attr('T')) + ',0)');
+        wave.transition().duration(config.waveAnimateTime * (1 - wave.attr('T'))).ease('linear').attr('transform', 'translate(' + waveAnimateScale(1) + ',0)').attr('T', 1).each('end', function() { wave.attr('T', 0); animateWave(); });
+      }
+    }
+
+    // Config por nivel (verde/amarillo/rojo) con colores del tema
+    function gaugeConfig(pct) {
+      var c = liquidFillGaugeDefaultSettings();
+      c.circleThickness = 0.045; c.textVertPosition = 0.52; c.waveAnimateTime = 4000;
+      c.displayPercent = true; c.maxValue = 100; c.waveHeight = 0.06; c.textSize = 0.9;
+      if (pct > 90) { c.circleColor = "#16a34a"; c.textColor = "#065f46"; c.waveTextColor = "#166534"; c.waveColor = "#86efac"; c.waveCount = 1; }
+      else if (pct >= 50) { c.circleColor = "#f7bf1e"; c.textColor = "#765a04"; c.waveTextColor = "#92400e"; c.waveColor = "#ffe9a8"; c.waveCount = 2; }
+      else { c.circleColor = "#f7321e"; c.textColor = "#4f0a03"; c.waveTextColor = "#991b1b"; c.waveColor = "#fedbd8"; c.waveCount = 3; c.waveHeight = 0.1; }
+      return c;
+    }
+
+    // Dibuja/actualiza ambos gauges
+    function renderGauges(coherencia, avance) {
+      if (typeof d3 === 'undefined') return; // d3 no cargó (sin internet)
+      loadLiquidFillGauge("gaugeCoherencia", coherencia, gaugeConfig(coherencia));
+      loadLiquidFillGauge("gaugeAvance", avance, gaugeConfig(avance));
+    }
+  </script>
+
+  <script>
+    let allData = [];
+    let filteredData = [];
+    let currentRecord = null;
+    let lastAnalysis = null;
+
+    document.addEventListener('DOMContentLoaded', recargarDatos);
+
+    async function recargarDatos() {
+      try {
+        const response = await fetch('/data.json');
+        if (!response.ok) throw new Error('No se pudieron cargar los datos');
+        allData = await response.json();
+        renderStats(allData);
+        filtrarTabla();
+      } catch (error) {
+        document.getElementById('tableBody').innerHTML =
+          `<tr><td colspan="9"><div class="empty" style="color:var(--danger)">Error: ${error.message}</div></td></tr>`;
+      }
+    }
+
+    function prom(arr, key) {
+      const vals = arr.map(r => Number(r[key])).filter(v => !isNaN(v) && v > 0);
+      if (!vals.length) return '-';
+      return (vals.reduce((a,b) => a+b, 0) / vals.length).toFixed(2);
+    }
+
+    let _gaugeTimer = null;
+    function renderStats(data) {
+      document.getElementById('statTotal').textContent = data.length;
+      const revisados = data.filter(r => r.completado).length;
+      const pendientes = data.length - revisados;
+      document.getElementById('statPendientes').textContent = pendientes;
+      document.getElementById('statRevisados').textContent = revisados;
+      const avance = data.length ? Math.round(revisados / data.length * 100) : 0;
+      document.getElementById('statAvance').textContent = avance + '%';
+      // Coherencia global = suma / (9 * N) * 100
+      const suma = data.reduce((acc, r) =>
+        acc + (Number(r.calif_riesgo)||0) + (Number(r.calif_causa)||0) + (Number(r.calif_control)||0), 0);
+      const coh = data.length ? Math.round(suma / (9 * data.length) * 100) : 0;
+      document.getElementById('statCoherencia').textContent = coh + '%';
+      // Actualizar gauges (con pequeño debounce para no redibujar en cada tecla)
+      clearTimeout(_gaugeTimer);
+      _gaugeTimer = setTimeout(() => renderGauges(coh, avance), 150);
+    }
+
+    function filtrarTabla() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const verCompletados = document.getElementById('verCompletados').checked;
+      filteredData = allData.filter(r => {
+        // Ocultar revisados salvo que el checkbox esté activo
+        if (!verCompletados && r.completado) return false;
+        if (!q) return true;
+        return (r.riesgo||'').toLowerCase().includes(q) ||
+               (r.causa||'').toLowerCase().includes(q) ||
+               (r.control||'').toLowerCase().includes(q);
+      });
+      renderTable(filteredData);
+    }
+
+    function badgeScore(v) {
+      if (!v) return '<span class="badge badge-gris">-</span>';
+      const cls = v === 1 ? 'badge-rojo' : v === 2 ? 'badge-amarillo' : 'badge-verde';
+      return `<span class="badge ${cls}">${v}</span>`;
+    }
+
+    // Resalta brevemente la fila recién actualizada
+    function flashRow(id) {
+      const row = document.querySelector(`tbody tr[data-id="${id}"]`);
+      if (row) {
+        row.classList.remove('flash');
+        void row.offsetWidth; // reiniciar animación
+        row.classList.add('flash');
+        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+    }
+
+    function estadoCell(r) {
+      if (r.completado) {
+        return `<span class="badge badge-verde" style="margin-bottom:4px;">✓ Completado</span><br>
+          <button class="btn-estado reabrir" onclick="cambiarEstado(${r.id}, false)" title="Reabrir para editar">
+            <i class="fa-solid fa-rotate-left"></i> Reabrir
+          </button>`;
+      }
+      return `<button class="btn-estado completar" onclick="cambiarEstado(${r.id}, true)" title="Marcar como completado">
+          <i class="fa-solid fa-check"></i> Completar
+        </button>`;
+    }
+
+    function renderTable(data) {
+      const tbody = document.getElementById('tableBody');
+      if (!data.length) {
+        tbody.innerHTML = `<tr><td colspan="9"><div class="empty">No hay registros que coincidan.</div></td></tr>`;
+        return;
+      }
+      tbody.innerHTML = data.map(r => `
+        <tr data-id="${r.id}">
+          <td class="id-cell">${r.id}</td>
+          <td class="text-cell"><div class="texto-truncado">${escapeHtml(r.riesgo)}</div></td>
+          <td class="text-cell"><div class="texto-truncado">${escapeHtml(r.causa)}</div></td>
+          <td class="text-cell"><div class="texto-truncado">${escapeHtml(r.control)}</div></td>
+          <td>${badgeScore(Number(r.calif_riesgo))}</td>
+          <td>${badgeScore(Number(r.calif_causa))}</td>
+          <td>${badgeScore(Number(r.calif_control))}</td>
+          <td><button class="btn-ia" onclick="abrirModal(${r.id})"><i class="fa-solid fa-wand-magic-sparkles"></i> Validar IA</button></td>
+          <td style="text-align:center;">${estadoCell(r)}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Cambia el estado completado/reabierto directamente desde la tabla
+    async function cambiarEstado(id, completado) {
+      try {
+        const response = await fetch('/api/completar', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id, completado })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Error');
+        const idx = allData.findIndex(r => String(r.id) === String(id));
+        if (idx >= 0) allData[idx].completado = completado;
+        renderStats(allData);
+        filtrarTabla();
+      } catch (error) {
+        alert('No se pudo cambiar el estado: ' + error.message);
+      }
+    }
+
+    function abrirModal(id) {
+      currentRecord = allData.find(r => r.id === id);
+      if (!currentRecord) return;
+      document.getElementById('recordId').textContent = id;
+      document.getElementById('riesgoBox').textContent = currentRecord.riesgo || '[No especificado]';
+      document.getElementById('causaBox').textContent = currentRecord.causa || '[No especificado]';
+      document.getElementById('controlBox').textContent = currentRecord.control || '[No especificado]';
+      document.getElementById('modalResult').style.display = 'none';
+      document.getElementById('modalLoading').style.display = 'none';
+      lastAnalysis = null;
+      document.getElementById('btnGuardar').disabled = true; // requiere calcular primero
+      document.getElementById('validationModal').classList.add('active');
+    }
+
+    function cerrarModal() {
+      document.getElementById('validationModal').classList.remove('active');
+      currentRecord = null;
+    }
+
+    // Marca el registro como revisado -> desaparece de la tabla y cierra el modal
+    async function marcarCompletado() {
+      if (!currentRecord) return;
+      try {
+        const response = await fetch('/api/completar', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: currentRecord.id, completado: true })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Error');
+
+        const idx = allData.findIndex(r => String(r.id) === String(currentRecord.id));
+        if (idx >= 0) allData[idx].completado = true;
+        renderStats(allData);
+        filtrarTabla();
+        cerrarModal();
+      } catch (error) {
+        alert('No se pudo marcar como completado: ' + error.message);
+      }
+    }
+
+    // Descarga el Excel enriquecido desde el servidor
+    function descargarExcel() {
+      window.location.href = '/api/exportar';
+    }
+
+    // PASO 1: Calcular (analizar con IA). NO persiste nada. Habilita "Guardar".
+    async function calcular() {
+      if (!currentRecord) return;
+      const btnC = document.getElementById('btnCalcular');
+      const btnG = document.getElementById('btnGuardar');
+      btnC.disabled = true;
+      document.getElementById('modalLoading').style.display = 'block';
+      document.getElementById('modalResult').style.display = 'none';
+
+      try {
+        const response = await fetch('/api/validate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            riesgo: currentRecord.riesgo,
+            causa: currentRecord.causa,
+            control: currentRecord.control
+          })
+        });
+        const raw = await response.text();
+        let data;
+        try { data = JSON.parse(raw); }
+        catch (e) { throw new Error('Respuesta no válida: ' + raw.substring(0, 120)); }
+        document.getElementById('modalLoading').style.display = 'none';
+        if (!response.ok) throw new Error(data.error || 'Error desconocido');
+
+        lastAnalysis = data.analysis || {};
+        renderResultado(data, false);
+        btnG.disabled = false; // ya se puede guardar
+      } catch (error) {
+        document.getElementById('modalLoading').style.display = 'none';
+        renderError(error.message);
+      } finally {
+        btnC.disabled = false;
+      }
+    }
+
+    // PASO 2: Guardar la redacción editada Y RECALIFICAR ese texto (nota coherente con lo guardado).
+    async function guardarCalificacion() {
+      if (!currentRecord) return;
+      const btnG = document.getElementById('btnGuardar');
+      btnG.disabled = true;
+      document.getElementById('modalLoading').style.display = 'block';
+
+      // Leer la redacción final de los textareas editables
+      const txtR = document.getElementById('editRiesgo');
+      const txtC = document.getElementById('editCausa');
+      const txtCtrl = document.getElementById('editControl');
+
+      const payload = {
+        id: currentRecord.id,
+        recalcular: true, // recalifica el texto editado para que la nota corresponda
+        riesgo: txtR ? txtR.value : undefined,
+        causa: txtC ? txtC.value : undefined,
+        control: txtCtrl ? txtCtrl.value : undefined
+      };
+
+      try {
+        const response = await fetch('/api/guardar', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json();
+        document.getElementById('modalLoading').style.display = 'none';
+        if (!response.ok) throw new Error(data.error || 'Error');
+
+        // Sincronizar estado local + tabla + cajas de texto + análisis mostrado
+        const idx = allData.findIndex(r => String(r.id) === String(currentRecord.id));
+        if (idx >= 0) { allData[idx] = data.registro; currentRecord = data.registro; }
+        document.getElementById('riesgoBox').textContent = currentRecord.riesgo;
+        document.getElementById('causaBox').textContent = currentRecord.causa;
+        document.getElementById('controlBox').textContent = currentRecord.control;
+        // Actualizar las tarjetas de calificación con la nota recalculada
+        if (data.analysis) { lastAnalysis = data.analysis; renderResultado({ analysis: data.analysis }, false); }
+        renderStats(allData);
+        filtrarTabla();
+        flashRow(currentRecord.id); // resaltar la fila actualizada
+
+        // Banner de confirmación
+        const el = document.getElementById('saveBanner');
+        if (el) {
+          el.style.display = 'block';
+          setTimeout(() => { el.style.display = 'none'; }, 4000);
+        }
+      } catch (error) {
+        renderError(error.message);
+      } finally {
+        btnG.disabled = false;
+      }
+    }
+
+    function renderError(msg) {
+      const el = document.getElementById('modalResult');
+      el.innerHTML = `<div class="result-block error">
+        <strong style="color:var(--danger)"><i class="fa-solid fa-circle-xmark"></i> Error en Validación</strong>
+        <p style="margin:8px 0 0; font-size:13px; color:#374151;">${escapeHtml(msg)}</p>
+      </div>`;
+      el.style.display = 'block';
+    }
+
+    function assessCard(title, badgeClass, a, extraRows) {
+      if (!a) return '';
+      const score = a.score || '-';
+      const rows = (extraRows || []).map(([k,v]) =>
+        `<div class="assess-row"><span class="k">${k}</span><span class="v">${escapeHtml(v ?? '-')}</span></div>`
+      ).join('');
+      return `<div class="assess-card">
+        <h4><span class="badge ${badgeClass}">${title}</span> <span class="score-chip score-${score}">${score}</span></h4>
+        ${rows}
+        ${a.findings ? `<div class="findings">${escapeHtml(a.findings)}</div>` : ''}
+      </div>`;
+    }
+
+    function recoGroup(title, items, cls) {
+      if (!items || !items.length) return '';
+      return `<div class="reco-group">
+        <h5>${title}</h5>
+        <ul class="reco-list ${cls}">${items.map(i => `<li>${escapeHtml(i)}</li>`).join('')}</ul>
+      </div>`;
+    }
+
+    function compsToStr(c) {
+      if (!c) return '-';
+      if (Array.isArray(c)) return c.join(', ');
+      // objeto {alertamiento:true,...}
+      return Object.entries(c).map(([k,v]) => `${v ? '✓' : '✗'} ${k}`).join('  ');
+    }
+
+    // Estado de un componente del control: ✓ presente / ✗ ausente + fragmento corto abreviado
+    function compFlag(co, key) {
+      const presente = co.componentes && co.componentes[key] === true;
+      const frag = co.desglose && co.desglose[key];
+      const icon = presente ? '✓' : '✗';
+      if (frag && !/^no detectad/i.test(frag)) {
+        const corto = frag.length > 60 ? frag.substring(0, 57) + '…' : frag;
+        return `${icon} ${corto}`;
+      }
+      return `${icon} ${presente ? 'presente' : 'no detectado'}`;
+    }
+
+    // Sub-elemento del alertamiento (núcleo verbal / complemento / señal de alerta)
+    function alertPart(co, key) {
+      const est = co.alertamiento_estructura || {};
+      const v = est[key];
+      if (!v || /^no detectad/i.test(v)) return '✗ no detectado';
+      const corto = v.length > 50 ? v.substring(0, 47) + '…' : v;
+      return `✓ ${corto}`;
+    }
+
+    // Conteo de "se": muestra N/3 con ✓ o ✗
+    function seFlag(co) {
+      const n = parseInt(String(co.conteo_se).match(/\d+/)?.[0] ?? '', 10);
+      if (isNaN(n)) return '-';
+      return `${n >= 3 ? '✓' : '✗'} ${n} de 3`;
+    }
+
+    function renderResultado(data, guardado) {
+      let a = data.analysis || {};
+      if (a.raw_response && !a.overall_coherence) {
+        let txt = a.raw_response.replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '').trim();
+        const m = txt.match(/\{[\s\S]*\}/);
+        if (m) { try { a = JSON.parse(m[0]); } catch (e) {} }
+      }
+      const coh = a.overall_coherence || 'Medio';
+      const ca = a.causa_assessment || {};
+      const co = a.control_assessment || {};
+      const rs = a.redaccion_sugerida || {};
+
+      // Pre-llenar los textareas editables: si hay redacción sugerida la usamos, si no el texto actual
+      const valR = rs.riesgo || currentRecord.riesgo || '';
+      const valC = rs.causa || currentRecord.causa || '';
+      const valCtrl = rs.control || currentRecord.control || '';
+
+      const redaccionBlock = `<div class="reco-group" style="margin-top:16px; background:#f8fffb; border:1px solid var(--border-green); border-radius:12px; padding:14px;">
+          <h5 style="color:var(--primary-dark)"><i class="fa-solid fa-pen-to-square"></i> Redacción sugerida (editable — complétala a tu gusto antes de guardar)</h5>
+          <div style="margin:10px 0;">
+            <label style="font-size:11px; color:var(--muted); font-weight:700;">RIESGO</label>
+            <textarea id="editRiesgo" style="width:100%; min-height:60px; font-size:12.5px; line-height:1.5; margin-top:4px;">${escapeHtml(valR)}</textarea>
+          </div>
+          <div style="margin:10px 0;">
+            <label style="font-size:11px; color:var(--muted); font-weight:700;">CAUSA <span style="font-weight:400;">(sin "que")</span></label>
+            <textarea id="editCausa" style="width:100%; min-height:80px; font-size:12.5px; line-height:1.5; margin-top:4px;">${escapeHtml(valC)}</textarea>
+          </div>
+          <div style="margin:10px 0;">
+            <label style="font-size:11px; color:var(--muted); font-weight:700;">CONTROL <span style="font-weight:400;">(Mediante + 3 "se")</span></label>
+            <textarea id="editControl" style="width:100%; min-height:90px; font-size:12.5px; line-height:1.5; margin-top:4px;">${escapeHtml(valCtrl)}</textarea>
+          </div>
+          ${(rs._advertencia_causa || rs._advertencia_control || rs._advertencia_alertamiento || rs._advertencia_senal || rs._advertencia_contexto) ? `
+            <div style="background:#fef9c3; color:#92400e; border:1px solid #fde68a; border-radius:8px; padding:8px 12px; margin:8px 0; font-size:11.5px;">
+              <i class="fa-solid fa-triangle-exclamation"></i> <strong>Revisar:</strong>
+              ${rs._advertencia_causa ? `<div>${escapeHtml(rs._advertencia_causa)}</div>` : ''}
+              ${rs._advertencia_control ? `<div>${escapeHtml(rs._advertencia_control)}</div>` : ''}
+              ${rs._advertencia_alertamiento ? `<div>${escapeHtml(rs._advertencia_alertamiento)}</div>` : ''}
+              ${rs._advertencia_senal ? `<div>${escapeHtml(rs._advertencia_senal)}</div>` : ''}
+              ${rs._advertencia_contexto ? `<div>${escapeHtml(rs._advertencia_contexto)}</div>` : ''}
+            </div>` : ''}
+          <p style="font-size:11.5px; color:var(--muted); margin:6px 0 0;">
+            <i class="fa-solid fa-circle-info"></i> Al pulsar <strong>Guardar y recalificar</strong> (arriba) se guarda esta redacción tal como la dejes y la IA vuelve a calificar ESTE texto, para que la nota corresponda a lo que quedó guardado.
+          </p>
+        </div>`;
+
+      const html = `<div class="result-block">
+        <div id="saveBanner" style="display:none; background:#dcfce7; color:#166534; border:1px solid #bbf7d0; border-radius:10px; padding:10px 14px; margin-bottom:14px; font-size:13px; font-weight:600;">
+          <i class="fa-solid fa-circle-check"></i> Guardado en la base de datos. La tabla se actualizó.
+        </div>
+        <div class="coherence-banner coherence-${coh}">
+          <i class="fa-solid fa-gauge-high" style="font-size:22px;"></i>
+          <div>
+            <div style="font-size:11px; text-transform:uppercase; letter-spacing:.08em; opacity:.8;">Coherencia General</div>
+            <div class="pct">${coh}</div>
+          </div>
+        </div>
+
+        <div class="assess-grid">
+          ${assessCard('Riesgo', 'badge-riesgo', a.riesgo_assessment, [])}
+          ${assessCard('Causa', 'badge-causa', ca, [
+            ['Nota SFC', ca.nota_aplicada],
+            ['Sujeto', ca.sujeto],
+            ['Acción', ca.accion],
+            ['Objeto', ca.objeto],
+            ['Delito fuente', ca.delito_fuente],
+            ['Tipología', ca.tipologia],
+            ['Factores riesgo', ca.factores_riesgo]
+          ])}
+          ${assessCard('Control', 'badge-control', co, [
+            ['Nota SFC', co.nota_aplicada],
+            ['① Alertamiento', compFlag(co, 'alertamiento')],
+            ['· Núcleo verbal', alertPart(co, 'nucleo_verbal')],
+            ['· Complemento', alertPart(co, 'complemento')],
+            ['· Señal de alerta', alertPart(co, 'senal_alerta')],
+            ['② Análisis', compFlag(co, 'analisis')],
+            ['③ Reporte', compFlag(co, 'reporte')],
+            ['④ Decisión', compFlag(co, 'decision')],
+            ['"se" (esperados 3)', seFlag(co)],
+            ['Coherencia c/Causa', co.coherencia_con_causa],
+            ['Error categórico', co.error_categorico === true ? 'Sí' : 'No']
+          ])}
+        </div>
+
+        ${recoGroup('Fortalezas', a.strengths, 'strengths')}
+        ${recoGroup('Debilidades', a.weaknesses, 'weaknesses')}
+        ${recoGroup('Recomendaciones', a.recommendations, 'recos')}
+
+        ${redaccionBlock}
+
+        <details class="raw">
+          <summary style="cursor:pointer; color:var(--muted);">Ver respuesta JSON completa</summary>
+          <pre>${escapeHtml(JSON.stringify(a, null, 2))}</pre>
+        </details>
+      </div>`;
+
+      const el = document.getElementById('modalResult');
+      el.innerHTML = html;
+      el.style.display = 'block';
+    }
+
+    document.getElementById('validationModal').addEventListener('click', (e) => {
+      if (e.target.id === 'validationModal') cerrarModal();
+    });
+  </script>
+</body>
+</html>

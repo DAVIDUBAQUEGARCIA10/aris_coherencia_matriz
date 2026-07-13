@@ -1,0 +1,1046 @@
+[
+  {
+    "id": 1,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales realizan pagos de cuotas superiores al monto registrado individualmente en el periodo anterior por un título equivalente a 90 días, procesando dichos pagos durante la vigencia del título. Esto dificulta la trazabilidad del origen de los fondos e integra capitales de origen ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Alertamiento de pagos anticipados de cuotas que superan el monto pactado inicialmente dentro de los primeros 90 días desde la apertura del título de capitalización. Mediante el cual se analiza el comportamiento transaccional del cliente y se verifica la justificación del pago efectuado frente a las condiciones contractuales del producto. Como resultado, se reporta internamente al oficial de cumplimiento y se documenta el procedimiento de validación para prevenir posibles mecanismos de utilización del sistema asegurador para el ocultamiento o movilización de recursos de origen ilícito.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 2,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes presentan un incremento inesperado y significativo en el volumen total de pagos, superando el 150% en el pago mensual sumado en los últimos 30 días respecto a los pagos de los últimos 90 días. Este incremento proviene de diferentes canales, dificultando la trazabilidad del origen de los fondos e integrando capitales producto de enriquecimiento ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Alertamiento de pagos de cuotas realizados por clientes por valores superiores a los pactados individualmente en su producto. Mediante el cual se analiza la trazabilidad de la transacción, el canal de pago utilizado y la consistencia del monto frente a la información financiera y perfil económico del cliente. Como resultado, se reporta internamente al oficial de cumplimiento y se activa protocolo de revisión y seguimiento de la operación para determinar su razonabilidad y prevenir posibles riesgos asociados al uso indebido de productos de capitalización.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 3,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes presentan desviaciones financieras inusuales o inconsistentes, indicando la utilización del sistema de capitalización para el ocultamiento de recursos provenientes de corrupción. Esta situación se detona al evidenciar una variación superior al 50% frente al año anterior, con una diferencia superior a 5 millones de pesos y realizando dichas transacciones desde diferentes canales, dificultando la trazabilidad del origen de los fondos e integrando capitales producto de enriquecimiento ilícito mediante movimientos encadenados simulando operaciones legítimas.",
+    "control": "Alertamiento de desviaciones financieras inusuales en el perfil económico del cliente. Mediante el cual se analiza el ingreso reportado, presentando un incremento superior al 50% respecto al periodo anterior y la diferencia superando el umbral establecido, realizando un análisis comparativo de la información financiera declarada, su actividad económica y la coherencia con su comportamiento transaccional. Como resultado, se reporta internamente al oficial de cumplimiento y se activa un procedimiento de validación. Para lo cual se aplica un control adicional para restringir el posible uso del sistema de capitalización para el ocultamiento de recursos de origen ilícito.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 4,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes modifican su perfil transaccional informando datos errados para simular aumentos de ingresos, ubicación y cambios en otras variables para justificar la adquisición de pólizas de seguros por montos altos, realizadas a través de canales tradicionales, sin evidencia legítima, utilizando los productos como instrumentos para ocultar el origen ilícito de recursos provenientes del narcotráfico y otros delitos, mediante el pitufeo y otras modalidades.",
+    "control": "Alertamiento de variaciones en el nivel de riesgo detectadas a través de reportes automáticos generados por el sistema de score. Mediante el cual se analiza el cambio en el perfil transaccional y se verifica la legitimidad de la información. Como resultado, se reporta a la unidad de información y análisis financiera y se documenta la situación. Para lo cual se solicita formalmente a los directores comerciales la actualización del conocimiento intensificado y se activa el protocolo de cancelación o no renovación del producto de acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 5,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Personas jurídicas con fecha de constitución inferior a dos años adquieren pólizas de ramos generales por valores asegurado acumulados superiores a los establecidos, facilitando la simulación de operaciones contractuales y la fragmentación de recursos ilícitos. Esta situación refleja el uso de empresas fachada, lo cual incrementa el riesgo de lavado de activos.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se analiza cualquier actividad inusual o sospechosa, especialmente aquellas que siguen patrones de comportamiento atípicos cuando una persona jurídica con fecha de constitución inferior a dos años adquiere pólizas vigentes cuyo valor acumulado asegurado supera el umbral establecido. Como resultado, se reporta a la unidad de información y análisis financiera y se documenta el ROS ante la UIAF. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 6,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuentes de lavado de activos ocultan esta condición delictiva mediante identidades falsas, información incompleta o inconsistente, constituyen o mantienen pólizas tales como automóviles, aviación, corriente débil, cumplimiento, incendio, gestionadas a través de canales tradicionales y digitales, lo que permite la movilización de recursos ilícitos mediante el método de simulación de operaciones y falsificación de documentos.",
+    "control": "Alertamiento de validación de alertas de clientes tomadores y asegurados contra listas restrictivas oficiales. Mediante el cual se analiza la información de clientes contra listas de la Organización de las Naciones Unidas y la Oficina de Control de Activos Extranjeros del Departamento del Tesoro de los Estados Unidos. Como resultado, se reporta a la unidad de información y análisis financiero y se documenta la operación sospechosa. Para lo cual se ejecuta la marcación de cliente y se activa el protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 7,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos ocultan su condición delictiva mediante identidades falsas, incompletas o información inconsistente, constituyendo o manteniendo pólizas específicas. Este comportamiento se gestiona a través de canales tradicionales y digitales, permitiendo la movilización de recursos ilícitos mediante la simulación de operaciones y la falsificación de documentos.",
+    "control": "Alertamiento de inconsistencias en la veracidad de identidad y de la completitud de la información del cliente en el proceso de vinculación. Mediante el cual se analiza la información con posibles inconsistencias. Como resultado, se reporta a la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se declina el proceso contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 8,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos.",
+    "causa": "Clientes suscriben pólizas en ramos generales, ocultando su condición delictiva mediante identidades falsas o información inconsistente. Estos clientes movilizan recursos ilícitos mediante productos y métodos de simulación de operaciones a través de canales tradicionales y digitales.",
+    "control": "Alertamiento en la validación de la identidad de personas naturales en la herramienta digital URL del proceso de vinculación o actualización. Mediante el cual se analiza la posible suplantación de identidad. Como resultado, se genera un informe interno automático documentado para la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se rechaza la vinculación si no es posible validar la idoneidad del cliente.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 9,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas no superan controles de autenticación reforzada durante los procesos de vinculación o actualización por canales digitales y tradicionales, evidenciando riesgos de suplantación y uso de estructuras societarias fachada para acceder al sistema asegurador mediante productos como automóviles, aviación, corriente débil, cumplimiento e incendio, facilitando la legitimación de capitales ilícitos desde el inicio de la relación contractual mediante depósitos fraccionados y transferencias internacionales en jurisdicciones de alto riesgo.",
+    "control": "Alertamiento de la validación de la identidad del representante legal o apoderado del cliente persona jurídica en la herramienta digital. Mediante el cual se analiza la posible suplantación y la vinculación de empresas fachada. Como resultado, se genera un informe automático documentado para la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se rechaza la vinculación si no es posible validar la idoneidad del cliente.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 10,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas no superan controles de autenticación reforzada, evidenciando riesgos de suplantación o uso de estructuras societarias fachada para acceder al sistema asegurador mediante productos específicos, facilitando la legitimación de capitales ilícitos desde el inicio de la relación contractual mediante depósitos fraccionados y transferencias internacionales en jurisdicciones de alto riesgo.",
+    "control": "Alertamiento de patrones de empresas fachada o simulación de perfil. Mediante el cual se analiza la existencia de documentos y se valida la información del certificado de existencia y representación legal. Como resultado, se reporta a la dirección de prevención de lavado de activos. Para lo cual se rechaza la vinculación previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 11,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos ocultan su condición delictiva relacionada con lavado de activos mediante identidades falsas o información inconsistente. Estos clientes mantienen pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio, entre otros ramos generales, gestionadas a través de canales tradicionales y digitales, lo permitiendo la movilización de recursos ilícitos mediante el método de simulación de operaciones.",
+    "control": "Alertamiento generado por la validación de la veracidad de la información del cliente persona natural capturada en los formatos de conocimiento, cuando se identifican inconsistencias en la identidad o el perfil que superan el 20% de discrepancia con la información oficial. Mediante el cual se analiza la información del cliente y se verifica la consistencia de la identidad. Como resultado, se reporta a la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se rechaza la vinculación, previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 12,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes registran información incompleta de los datos de los beneficiarios en los formatos de conocimiento de cliente, lo cual impide la trazabilidad del beneficiario. Esto permite que personas no identificadas, vinculadas con actividades de narcotráfico, reclamen indemnizaciones mediante la presentación de documentos falsos o la activación de siniestros simulados, utilizando productos aseguradores para legitimar recursos ilícitos.",
+    "control": "Alertamiento generado por inconsistencias en la identidad o el perfil de los beneficiarios asegurados, cuando se detecta que más del 30% de la información proporcionada es incompleta o contradictoria. Mediante el cual se realiza análisis detallado del caso para determinar su posible relación con operaciones sospechosas. Como resultado, se genera informe de la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa y se documenta el reporte de operación sospechosa ante la Unidad de Información y Análisis Financiero. Para lo cual se activa el protocolo para evitar la asociación de beneficiarios y prevenir el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 13,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas jurídicas omiten información clave sobre la identidad de los controlantes y la composición accionaria durante el proceso de vinculación o actualización por canales presenciales o digitales, impidiendo la debida diligencia. Esto permite que estructuras societarias fachada, vinculadas con organizaciones delictivas, reclamen indemnizaciones mediante contratos simulados o siniestros ficticios, canalizando recursos ilícitos a través de pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio y otros ramos generales.",
+    "control": "Alertamiento generado en el aplicativo digital de vinculación de terceros cuando el beneficiario final presenta coincidencias en listas restrictivas y la información sobre la identidad de los controlantes y/o composición accionaria está incompleta. Mediante el cual se analiza la inconsistencia identificada por el área comercial. Como resultado, se elabora un informe y se remite a la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa. Para lo cual se decide la continuidad o el rechazo del proceso de vinculación, como medida preventiva frente al riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 14,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y jurídicas modifican su comportamiento transaccional e información financiera de forma atípica, utilizando documentos falsos y empresas fachada para mantener vigentes pólizas del portafolio asegurador, ocultando fondos de origen ilícito provenientes del lavado de activos de narcotráfico mediante la manipulación deliberada de su perfil.",
+    "control": "Alertamiento de anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos. Mediante el cual se analiza el aumento de su perfil de riesgo entre diferentes segmentos. Como resultado, se realiza reporte a la unidad de información y análisis financiero. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 15,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y jurídicas modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial, utilizando documentos falsos y empresas fachada para mantener vigentes pólizas del portafolio asegurador, ocultando fondos de origen ilícito provenientes del lavado de activos y corrupción mediante la manipulación deliberada de su perfil.",
+    "control": "Alertamiento de anomalías detectadas por el modelo de segmentación que presentan cumplimiento en las señales de alerta parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se analiza el aumento de su perfil de riesgo entre diferentes segmentos. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 16,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Oferentes participan en procesos de disposición de bienes salvamentos, a través de canales presenciales o virtuales, presentando documentación financiera falsa o antecedentes alterados para justificar capacidad económica, con el fin de adquirir salvamentos recuperados por siniestro, los cuales son pagados en efectivo o mediante recursos de origen desconocido, permitiendo la integración de capitales ilícitos mediante el uso de procesos aseguradores como mecanismo de legalización, derivando de actividades de lavado de activos provenientes del narcotráfico.",
+    "control": "Alertamiento de irregularidades en la información financiera de los oferentes de salvamentos consideradas alertas tempranas, que presentan cumplimiento en las señales de alerta parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se evalúa la idoneidad de quienes participan en los procesos de disposición de bienes. Como resultado, se realiza reporte a la dirección de prevención lavado de activos para que dicho caso sea reportado a la unidad de información y análisis financiero. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación del proceso contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 17,
+    "riesgo": "Posibilidad de que Comerciales Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Oferentes participan en procesos de disposición de bienes mediante salvamentos, a través de canales presenciales o virtuales, presentando documentación financiera falsa o antecedentes alterados para justificar su capacidad económica, con el fin de adquirir salvamentos recuperados por siniestro, los cuales son pagados en efectivo o mediante recursos de origen desconocido, permitiendo la integración de capitales ilícitos provenientes del delito de lavado de activos derivado de la corrupción administrativa mediante la manipulación de contratos públicos, utilizando procesos aseguradores como mecanismo de legalización.",
+    "control": "Alertamiento de verificación cuando el oferente coincide en las listas de restringidos y/o presenta antecedentes, que presentan cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se analiza la información del oferente y se verifica su historial. Como resultado, se reporta a la dirección de prevención lavado de activos y se documenta el reporte de operación sospechosa ante la Unidad de Información y Análisis Financiero. Para lo cual se activa el protocolo de cancelación del acuerdo.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 18,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales y jurídicas modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial, utilizando documentos falsos y empresas fachada para mantener vigentes pólizas del portafolio asegurador, tales como construcción y obras de ingeniería civil, maquinaria amarilla, transporte, cumplimiento, entre otros ramos generales, ocultando fondos de origen ilícito provenientes de corrupción mediante la manipulación deliberada de su perfil.",
+    "control": "Alertamiento de anomalías detectadas por el modelo de segmentación, que presentan cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización para factor de riesgo de producto. Mediante el cual se analiza el aumento de su perfil de riesgo entre diferentes segmentos. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se activa protocolo de cancelación o no renovación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 19,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Tomadores personas naturales incrementan de manera abrupta y significativa el valor asegurado en productos tales como construcción y obras de ingeniería civil, maquinaria amarilla, transporte y cumplimiento, con un crecimiento superior al 175% respecto al periodo anterior, sin evidencia de cambios en su perfil financiero o patrimonial realizado por medio de canales. Esto puede evidenciar la intención de inflar coberturas para simular siniestros y obtener indemnizaciones con recursos provenientes de corrupción.",
+    "control": "Alertamiento de incrementos significativos en el valor acumulado asegurado por ramo para tomadores persona natural, que presentan cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se compara los montos suscritos en las pólizas vigentes frente al periodo anterior. Como resultado, se realiza reporte a la unidad de información y análisis financiero y, de corresponder, se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 20,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales reciben el pago en pólizas de seguros por un valor superior a $50.000.000 dentro de un periodo menor a tres meses desde la emisión de la póliza por canales digitales y tradicionales, lo que podría facilitar el uso del seguro como mecanismo para destinar recursos provenientes de corrupción mediante indemnizaciones simuladas.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza el pago de un siniestro a una persona natural por un valor superior a $50.000.000, dentro de un periodo estrictamente menor a tres meses desde la emisión de la póliza. Como resultado, se realiza reporte a la unidad de información y análisis financiero y, de corresponder, se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 21,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes persona jurídica reciben pagos de pólizas de automóviles, aviación, corriente débil, cumplimiento e incendio por siniestros por un valor superior a $100.000.000 dentro de un periodo menor a tres meses desde la emisión de la póliza por canales digitales y tradicionales, facilitando el uso del seguro como mecanismo para destinar recursos a lavado de activos mediante indemnizaciones simuladas provenientes de corrupción.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza el pago de un siniestro a una persona jurídica por un valor superior a $100.000.000, dentro de un periodo estrictamente menor a tres meses desde la emisión de la póliza. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 22,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes modifican beneficiarios registrados en las pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio, gestionando el pago de un siniestro dentro de un periodo menor a noventa días, lo cual puede ser utilizado como mecanismo para desviar recursos provenientes de corrupción hacia terceros, aprovechando canales digitales o presenciales para simular indemnizaciones.",
+    "control": "Alertamiento de verificación automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se efectúa el pago de un siniestro a un tercero que no figura como tomador, beneficiario o relacionado en la póliza vigente. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 23,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes modifican beneficiarios registrados en las pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio y, dentro de un periodo menor a noventa días, gestionan el pago de un siniestro, lo cual puede ser utilizado como mecanismo para desviar recursos provenientes de corrupción hacia terceros, aprovechando canales digitales o presenciales para simular indemnizaciones.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza un cambio de beneficiario y, dentro de un periodo estrictamente menor a noventa días, se presenta el pago de un siniestro. Como resultado, se realiza reporte a la unidad de información y análisis financiero y, de corresponder, se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 24,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes solicitan la cancelación anticipada de pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio, entre otros ramos, emitidas en un plazo menor a noventa días desde su inicio, sin una justificación válida, lo cual puede indicar una estrategia para interrumpir el contrato tras la entrada de recursos ilícitos provenientes de corrupción y simular operaciones.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se presenta la cancelación anticipada de una póliza emitida en un periodo estrictamente menor a noventa días. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 25,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales y jurídicas contratan cinco o más seguros del mismo ramo asegurador en un periodo igual o inferior a 90 días, mediante canales de ventas, destinados a cubrir terceros, evidenciando el uso de la compañía aseguradora como vehículo para legitimar recursos provenientes de corrupción mediante estrategias de dispersión de beneficiarios o fraccionamiento de primas.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando un cliente figura como tomador en más de cinco productos de alto riesgo activos por cada estrategia, o adquiere múltiples seguros en un corto periodo de tiempo para asegurar a diferentes terceros. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se ejecuta marcación de cliente. Para lo cual se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 26,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes efectúan pagos en efectivo sobre más de tres pólizas de seguros, tales como construcción y obras de ingeniería civil, maquinaria amarilla, transporte y cumplimiento, sin justificación económica aparente, conducta que representa un esquema de fraccionamiento a través de canales presenciales y virtuales, con recursos provenientes de narcotráfico.",
+    "control": "Alertamiento de clientes que presentan simultáneamente productos de alta exposición a delitos fuentes de lavado de activos. Mediante el cual se analiza la información de los pagos presenciales por caja a más de tres pólizas vigentes. Como resultado, se realiza reporte a la unidad de información y análisis financiero. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 27,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes adquieren pólizas de productos de cumplimiento, transporte, maquinaria o navegación, presentando nacionalidad, residencia o vínculos comerciales en jurisdicciones catalogadas como de alto riesgo por organismos internacionales, lo facilitando la utilización del sistema asegurador para integrar capitales de origen ilícito provenientes de corrupción mediante movimientos encadenados simulando operaciones legítimas.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se emite una póliza de un producto de alto riesgo de servicios, específicamente en los ramos de cumplimiento, transporte, maquinaria y equipo, y navegación, y el tomador presenta nacionalidad o residencia en una jurisdicción catalogada como de alto riesgo. Mediante el cual se detectan operaciones que involucran clientes vinculados a territorios con exposición elevada. Si se evidencia información u operación sospechosa, se realiza reporte a la unidad de información y análisis financiero e internamente se documenta el reporte de operación sospechosa. Como resultado, se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual, previniendo así el riesgo de lavado de activos. Para lo cual se implementan medidas adicionales de monitoreo y revisión de las transacciones relacionadas, asegurando el cumplimiento de los plazos establecidos para la evaluación de riesgos y la toma de decisiones pertinentes.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 28,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes suscriben pólizas del ramo 14 (equipo y maquinaria de contratistas) vinculados a actividades económicas de alta exposición de riesgo como construcción, minería o transporte de carga, quienes pueden utilizar estos productos para introducir recursos ilícitos al sistema asegurador mediante la simulación de eventos o la utilización indebida de maquinaria, originados por delitos de corrupción.",
+    "control": "Alertamiento de automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se apertura una póliza del ramo 14 (equipo y maquinaria de contratistas) cuyo tomador desarrolla una actividad económica clasificada como de alto riesgo. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 29,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes adquieren pólizas del portafolio agropecuario, tales como Ramo 923 (Cacao Seguro), Ramo 39 Producto 605 (Tranquilidad Rural), Producto 602 (Café Seguro), y productos 600 y 601 a través de canales digitales y/o tradicionales, omitiendo información clave en la identificación de beneficiarios. Esto permite que personas vinculadas a organizaciones delictivas utilicen al integrador para acceder a productos aseguradores destinados al sector rural, los cuales son utilizados para movilizar recursos ilícitos provenientes de narcotráfico mediante indemnizaciones simuladas.",
+    "control": "Alertamiento de señales generadas durante el proceso de vinculación, que presentan cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante la debida diligencia aplicada a los integradores y sus beneficiarios, se identifican inconsistencias en la información suministrada. Como resultado, se reporta el caso a la Dirección de Prevención de Lavado de Activos para su análisis. Para lo cual se activa el protocolo de no continuidad del proceso de vinculación, previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 30,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes adquieren pólizas de maquinaria amarilla, asegurando bienes muebles e inmuebles presuntamente adquiridos con recursos provenientes de corrupción, presentando documentación con inconsistencias o sin respaldo verificable por medio de canales tradicionales, permitiendo la incorporación de activos ilegítimos a la aseguradora como medio de legitimación de activos.",
+    "control": "Alertamiento sobre los activos o bienes a asegurar, específicamente maquinaria amarilla, presentando cumplimiento en las señales mediante la revisión del certificado de libertad y demás documentos que acrediten la legitimidad del origen del bien. Mediante el cual se identifica la no adquisición por medio de actividades asociadas a delitos fuente. Como resultado, se reporta el caso a la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa. Para lo cual se adopta la decisión sobre la continuidad o no continuidad del acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 31,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes adquieren pólizas de maquinaria amarilla que aseguran bienes muebles e inmuebles presuntamente adquiridos con recursos ilícitos, presentando documentación con inconsistencias o sin respaldo verificable por medio de canales tradicionales, lo permitiendo la incorporación de activos ilegítimos a la aseguradora como medio de legitimación de activos provenientes de minería ilegal y tráfico ilegal de vida silvestre.",
+    "control": "Alertamiento de verificación de señales en la aplicación de debida diligencia para la identificación del cliente, que presentan cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se verifica la información correspondiente en listas restrictivas. Como resultado, se realiza reporte a dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se activa protocolo de no continuidad del acuerdo contractual y posibles reportes a la unidad de información y análisis financiero.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 32,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos fuente de lavado de activos como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes presentan reclamaciones por canales tradicionales y digitales de siniestros dentro de los tres meses posteriores a la emisión de la póliza de automóviles, aviación, corriente débil, cumplimiento, incendio, manejo, rotura de maquinaria y otros ramos generales, sin contar con un historial asegurador que respalde el evento, aprovechando coberturas para canalizar indemnizaciones como método de integración de fondos ilícitos al sistema financiero, utilizando recursos provenientes de delitos fuente de lavado de activos.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre pólizas vigentes. Mediante el cual se identifica pagos de siniestros efectuados dentro de un periodo estrictamente menor a tres meses desde la fecha de emisión de la póliza. Como resultado, se reporta a la unidad de información y análisis financiero. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 33,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos fuente de lavado de activos como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Beneficiarios clasificados como personas expuestas políticamente reciben pagos por canales digitales de siniestros de ramos como cumplimiento, transporte, maquinaria y equipo, navegación cuya denominación es de alto riesgo, lo cual puede reflejar el uso del sistema asegurador para canalizar fondos ilícitos mediante operaciones o simulación de eventos, provenientes de delitos fuente de lavado de activos.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas siguiendo patrones de comportamiento atípicos al realizar el pago de siniestros en productos de alto riesgo, tales como ramo cumplimiento, transporte, maquinaria y equipo, y navegación. Esto resulta particularmente relevante cuando el beneficiario está catalogado como persona expuesta políticamente por manejo de recurso público, contratista del Estado, consorcio/unión temporal, o cuando se trata de un cliente natural o jurídico, así como en el caso de beneficiarios finales. Mediante el cual se verifica la información y se analiza la actividad. Como resultado, se reporta a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta la marcación de cliente y se activa el protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 34,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada para canalizar recursos provenientes de delitos fuente de lavado de activos, tales como captación ilegal de recursos del público o extorsión.",
+    "causa": "Clientes personas naturales o jurídicas acceden a nuevos productos del portafolio asegurador, tales como automóviles, aviación, corriente débil, cumplimiento, incendio y manejo, mediante procesos en canales transaccionales, aprovechando funcionalidades no parametrizadas o no identificadas en los procesos de validación para canalizar fondos ilícitos provenientes de delitos fuente de lavado de activos mediante pagos fraccionados o simulación de pagos.",
+    "control": "Alertamiento de potenciales eventos y alertas de alta exposición en la evaluación de riesgos en los proyectos presentados por el área de portafolio seguros y por el área de portafolio digital, presentando cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el análisis de variables como el objetivo, alcance, productos, canales, jurisdicciones o impacto en el conocimiento de la contraparte, se verifica la existencia de anomalías. Como resultado, se genera un reporte interno a los líderes del proyecto y se documentan las brechas identificadas. Para lo cual se adoptan medidas correctivas específicas para subsanar las brechas identificadas.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 35,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada para canalizar recursos provenientes de delitos fuente de lavado de activos, tales como la captación ilegal de recursos del público o la extorsión.",
+    "causa": "Clientes personas naturales y jurídicas modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial, utilizando herramientas como la simulación de ingresos, presentación de documentos falsos y creación de perfiles ficticios, para mantener vigentes pólizas del portafolio asegurador (automóviles, aviación, corriente débil, cumplimiento, incendio, manejo, entre otros ramos) y ocultar fondos de origen ilícito provenientes de delitos fuente de lavado de activos, como el tráfico de drogas.",
+    "control": "Alertamiento de anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos. Mediante el cual se analiza el aumento de su perfil de riesgo entre diferentes segmentos específicamente para el factor de riesgo canal. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 36,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes realizan pagos mediante canales tradicionales o digitales, utilizando productos tales como automóviles, aviación, corriente débil, cumplimiento, incendio y manejo, con nacionalidad o residencia en jurisdicciones categorizadas como de alto riesgo por organismos internacionales, con el objetivo de ocultar el origen ilícito de los recursos provenientes de delitos fuente de lavado de activos, como el tráfico de drogas, mediante métodos como la fragmentación de pagos.",
+    "control": "Alertamiento de tomadores de pólizas cuya actividad económica está clasificada como de alto riesgo. Mediante el cual se analiza la condición de los tomadores de pólizas con nacionalidad y/o jurisdicción de residencia catalogada como de alto riesgo según  organismos internacionales. Como resultado, se realiza reporte a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 37,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alta exposición de riesgo catalogada por organismos internacionales contratan pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio, manejo u otros ramos generales a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta facilita la canalización de recursos de origen ilícito asociados a delitos fuente de lavado de activos mediante pagos anticipados o fraccionados.",
+    "control": "Alertamiento detectando anomalías por el modelo de segmentación, presentando cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se analiza el aumento de su perfil de riesgo entre diferentes segmentos específicamente para el factor de riesgo Jurisdicción. Como resultado, se reporta a la unidad de información y análisis financiero y se documenta internamente. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 38,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alto riesgo por organismos internacionales contratan pólizas de automóviles, aviación, corriente débil, cumplimiento, incendio, manejo u otros ramos generales a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta facilita la canalización de recursos provenientes de delitos fuente de lavado de activos mediante pagos anticipados o fraccionados.",
+    "control": "Alertamiento validado cuando un cliente, persona natural o jurídica, realiza pagos en efectivo en caja o recaudo empresarial, presentando cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el análisis del contexto del tomador se evidencia información u operación sospechosa. Como resultado, se reporta a la unidad de información y análisis financiero. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 39,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada en operaciones relacionadas con lavado de activos o participe en operaciones delictivas contra la Administración Pública, corrupción, soborno transnacional, desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Proveedores o contrapartes buscan vincularse con la aseguradora mediante el uso de canales institucionales, realizando contratación directa utilizando el sistema de pagos empresariales para legitimar recursos ilícitos provenientes de delitos fuente de lavado de activos, como el tráfico de drogas. Utilizan empresas fachada para ocultar el origen de los fondos. Esta conducta combina factores de contratos empresariales, canal institucional y jurisdicción de alta exposición, lo que incrementa la probabilidad de que la compañía sea utilizada como vehículo para integrar capitales ilícitos en el sistema financiero.",
+    "control": "Alertamiento se valida la información descrita en el formato de inscripción de proveedores, presentando cumplimiento en las señales, lógicas y umbrales definidos en su parametrización. Mediante el cual se analiza la integridad de los documentos anexos exigidos. Como resultado, se reporta a dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se activa protocolo de no continuidad del acuerdo contractual y posibles reportes a la unidad de información y análisis financiero.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 40,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada en operaciones relacionadas con lavado de activos, así como en operaciones delictivas contra la administración pública, corrupción, soborno transnacional, desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Funcionarios participan en la aprobación de pagos de siniestros y en la vinculación de intermediarios sin los debidos filtros, facilitando un esquema de colusión interna, validando pagos a beneficiarios ficticios y canalizando comisiones irregulares, utilizando su rol funcional y el acceso al sistema de gestión de siniestros para legitimar recursos ilícitos provenientes de delitos fuente de lavado de activos y fraude en la obtención de pólizas de seguros, mediante manipulaciones deliberadas del flujo de aprobación y la creación de títulos de capitalización falsos.",
+    "control": "Alertamiento generado automáticamente sobre funcionarios con coincidencias en la base de terceros restringidos, presentando cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el monitoreo oportuno de posibles vínculos sensibles dentro de la organización. Como resultado, se realiza informe interno al oficial de cumplimiento y suplente y al área de talento humano para iniciar proceso de posible desvinculación. Para lo cual se aplica el procedimiento de desvinculación correspondiente.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 41,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Cliente persona natural o jurídica realiza operaciones en moneda extranjera vinculadas al pago de primas o aportes a productos aseguradores, con país de residencia o origen de recursos correspondiente a una jurisdicción clasificada como de alto riesgo por el Grupo de Acción Financiera Internacional, sin justificación económica plenamente verificable o coherente con su perfil financiero o actividad económica, aprovechando la utilización de transferencias internacionales o movimientos en divisas provenientes de jurisdicciones de alta exposición a delitos fuente de lavado de activos, como el tráfico de drogas, mediante operaciones aparentando ser transacciones legítimas pero facilitando la canalización o integración de recursos de origen ilícito dentro del sistema asegurador.",
+    "control": "Alertamiento generado cuando un cliente realiza una operación en moneda extranjera y su país de residencia o el origen de los fondos corresponde a una jurisdicción clasificada como de alto riesgo por el Grupo de Acción Financiera Internacional. Mediante el cual se analiza la trazabilidad de los recursos, el perfil financiero del cliente, la actividad económica declarada y la coherencia de la operación frente al comportamiento transaccional esperado. Como resultado, se reporta internamente al oficial de cumplimiento y se reporta a la unidad de análisis e información financiera. Para lo cual se aplica un seguimiento exhaustivo a las operaciones realizadas.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 42,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Cliente persona jurídica recibe el pago de un siniestro por un valor superior a $100.000.000 dentro de los primeros tres meses posteriores a la emisión de la póliza, sin existir una proporcionalidad evidente entre el tiempo de vigencia del contrato y la materialización del siniestro. Esta situación puede indicar la posible utilización del producto asegurador para canalizar o movilizar recursos de origen ilícito mediante la simulación o aceleración de eventos indemnizables, generando movimientos financieros significativos en un corto periodo de tiempo que aparentan corresponder a operaciones legítimas del contrato de seguro, asociados a delitos fuente de lavado de activos.",
+    "control": "Alertamiento generado al realizar el pago de un siniestro a una persona jurídica por un valor superior a $100.000.000 dentro de los primeros tres meses posteriores a la emisión de la póliza. Mediante el cual se analiza la trazabilidad del siniestro, las condiciones de suscripción del producto, la relación del beneficiario con el tomador y la coherencia de la operación frente al perfil financiero y comportamiento histórico del cliente. Como resultado, se reporta internamente al oficial de cumplimiento y se reporta a la unidad de análisis e información financiera. Para lo cual se aplica un seguimiento exhaustivo a las operaciones relacionadas.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 43,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Cliente persona natural o jurídica contrata productos aseguradores y asume el pago de primas cuyo valor no guarda relación con su capacidad financiera declarada, evidenciándose el valor de la prima prorrateado en el tiempo superiores a la disponibilidad financiera resultante entre los ingresos y egresos reportados por el tomador, sin existir una justificación económica verificable o coherente con su perfil financiero. Esta situación puede indicar la utilización del producto asegurador para ingresar recursos provenientes de delitos fuente de lavado de activos, facilitando la posible integración de capitales de procedencia ilícita dentro del sistema asegurador.",
+    "control": "Alertamiento generado al observar el valor de la prima de un producto sin relación con la capacidad financiera del tomador. Mediante el cual se evalúa la razón financiera de liquidez calculada a partir del valor de la prima dividido en el tiempo frente a la diferencia entre ingresos y egresos reportados por el cliente. Como resultado, se realiza reporte interno al oficial de cumplimiento y se activa procedimiento de seguimiento. Para lo cual se restringe el acceso a nuevos productos aseguradores hasta verificar la coherencia de la capacidad financiera del tomador.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 44,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Cliente persona natural o jurídica contrata productos del ramo estrategia (códigos 923 y 924) con actividad económica y jurisdicción de residencia u operación clasificadas como de alto riesgo frente a delitos asociados al lavado de activos, financiación del terrorismo y financiación de la proliferación de armas de destrucción masiva, incrementando la exposición del producto asegurador a ser utilizado como mecanismo para canalizar recursos provenientes de delitos fuente de lavado de activos. Aprovechando la contratación de productos financieros en sectores o zonas con mayor vulnerabilidad a actividades ilícitas, se realizan operaciones que aparentan corresponder a transacciones legítimas, facilitando la movilización o integración de capitales de procedencia ilícita dentro del sistema asegurador.",
+    "control": "Alertamiento generado cuando un tomador mantiene productos activos del ramo estrategia (códigos 923 y 924), presentando cumplimiento en las señales parametrizadas con las lógicas y umbrales definidos en su parametrización. Mediante el cual se analiza el perfil económico del cliente, la coherencia de la actividad económica declarada, la jurisdicción de residencia u operación y el comportamiento transaccional asociado a los productos contratados. Como resultado, se realiza reporte interno al oficial de cumplimiento y se activa procedimiento de seguimiento. Para lo cual se restringe el acceso a nuevos productos hasta verificar la legalidad de los recursos involucrados.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 45,
+    "riesgo": "Posibilidad de que Seguros Comerciales Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Cliente persona natural o jurídica presenta incrementos significativos en los ingresos reportados, superiores al 50% y con una diferencia mayor a $5.000.000 COP, sin justificación económica verificable o cambio sustancial en su actividad económica o situación financiera, lo cual puede evidenciar actualización estratégica o manipulación de la información financiera del cliente para aparentar mayor capacidad económica, permitiendo justificar el ingreso o movilización de recursos provenientes de delitos fuente de lavado de activos mediante operaciones simulando coherencia con el perfil financiero dentro del sistema asegurador.",
+    "control": "Alertamiento generado por desviaciones financieras inusuales en el perfil económico del cliente cuando el ingreso reportado presenta un incremento superior al 50% frente al periodo anterior y la diferencia es mayor a $5.000.000 COP. Mediante el cual se realiza análisis comparativo de la información financiera declarada, la actividad económica del cliente y la coherencia con su comportamiento transaccional dentro de los productos contratados. Como resultado, se realiza reporte interno al oficial de cumplimiento y se reporta a la Unidad de Información y Análisis Financiero. Para lo cual se restringe el acceso a productos aseguradores hasta verificar la legalidad de los recursos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 46,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes modifican su perfil transaccional informando datos errados para simular aumentos de ingresos, ubicación y cambio en otras variables para justificar la adquisición de pólizas de seguros tales como accidentes personales, grupo plan creciente, deudores y grupo educativo, por montos altos, realizadas a través de canales tradicionales, sin evidencia legítima, utilizando los productos como instrumentos para ocultar el origen ilícito de recursos provenientes de delitos fuente de lavado de activos, como el tráfico de drogas, mediante diversas modalidades, entre estas el pitufeo.",
+    "control": "Alertamiento generado cuando se detecta variación en el aumento del nivel de riesgo. Mediante el cual se revisa el cambio en el nivel de riesgo por el sistema de score. Como resultado, se realiza reporte a la unidad de información y análisis financiera y se documenta el reporte de operación sospechosa. Para lo cual se activa protocolo de cancelación o no renovación del producto de acuerdo contractual, previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 47,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Personas jurídicas con fecha de constitución inferior a dos años adquiriendo pólizas por valores asegurados acumulados superiores a $16.500.000 a través de canales comerciales tradicionales, lo cual puede reflejar el uso de empresas fachada para legitimar capitales, facilitando la simulación de operaciones contractuales y la fragmentación de recursos ilícitos asociados a delitos fuente de lavado de activos, como el tráfico de drogas.",
+    "control": "Alertamiento en el aplicativo de monitoreo sobre las transacciones. Mediante el cual se identifica cualquier actividad sospechosa o inusual, especialmente aquellas siguiendo patrones de comportamiento atípicos cuando una persona jurídica con fecha de constitución inferior a dos años adquiere pólizas vigentes cuyo valor acumulado asegurado supera los $16.500.000. Como resultado, se realiza reporte a la unidad de información y análisis financiera y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 48,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuente de lavado de activos ocultan esta condición delictiva mediante identidades falsas, información incompleta o inconsistente, constituyen o mantienen pólizas tales como vida, salud, entre otras, gestionadas a través de canales tradicionales y digitales, lo permitiendo la movilización de recursos ilícitos asociados a delitos fuente de lavado de activos mediante productos y el método de simulación de operaciones y falsificación de documentos.",
+    "control": "Alertamiento de validación de clientes tomadores y asegurados contra listas restrictivas oficiales y registros nuevos actualizados en listas. Mediante el cual se analiza la información de los clientes y se verifica su consistencia con las listas restrictivas. Como resultado, se reporta a la unidad de información y análisis financiero y se documenta el reporte de operación sospechosa. Para lo cual se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 49,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuente de lavado de activos ocultan esta condición delictiva mediante identidades falsas, incompletas o información inconsistente, constituyen o mantienen pólizas tales como vida, salud, entre otras, gestionadas a través de canales tradicionales y digitales, lo permitiendo la movilización de activos ilícitos asociados a delitos fuente de lavado de activos mediante productos y el método de simulación de operaciones y falsificación de documentos.",
+    "control": "Alertamiento generado al identificar inconsistencias sobre la veracidad de identidad y de la completitud de la información del cliente en el proceso de vinculación, presentando información con posible inconsistencias luego del análisis de variables. Mediante el cual se analiza la información con posibles inconsistencias. Como resultado, se reporta a la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se declina el proceso contractual.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 50,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes con investigaciones relacionadas con delitos fuente de lavado de activos, como el tráfico de drogas, ocultan esta condición delictiva mediante identidades falsas, incompletas o información inconsistente, constituyen o mantienen pólizas tales como vida y salud, gestionadas a través de canales tradicionales y digitales, permitiendo la movilización de recursos ilícitos mediante productos y el método de simulación de operaciones y falsificación de documentos.",
+    "control": "Alertamiento se valida la identidad de personas naturales en la herramienta digital URL del proceso de vinculación o actualización, presentando cumplimiento en las señales parametrizadas con las lógicas definidos en su parametrización. Mediante el cual se analiza la posible suplantación. Como resultado, se genera un informe interno automático documentado para la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se podría rechazar la vinculación si no es posible validar la idoneidad del cliente.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 51,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas utilizan estructuras societarias fachada y simulan contratos para acceder al sistema asegurador mediante productos específicos como accidentes personales, grupo, grupo plan creciente y deudores, utilizando canales digitales para evitar la detección, facilitando la legitimación de capitales ilícitos asociados a delitos fuente de lavado de activos, como el tráfico de influencias.",
+    "control": "Alertamiento se valida la identidad del representante legal o apoderado del cliente persona jurídica en la herramienta digital URL del proceso de vinculación o actualización, presentando cumplimiento en las señales parametrizadas con las lógicas definidos en su parametrización. Mediante el cual se analiza la posible suplantación y la vinculación de empresas fachada. Como resultado, se genera un informe interno automático documentado para la dirección de prevención de lavado de activos y transparencia corporativa. Para lo cual se rechaza la vinculación si no es posible validar la idoneidad del cliente.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 52,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas utilizan estructuras societarias fachada y simulación de contratos para acceder al sistema asegurador mediante productos específicos como accidentes personales, grupo, grupo plan creciente y deudores, utilizando canales digitales para evitar la detección, facilitando la legitimación de capitales ilícitos provenientes de delitos fuente de lavado de activos y asociados a actividades delictivas como el tráfico de drogas.",
+    "control": "Alertamiento sobre patrones de empresas fachada o simulación de perfil detectados durante los procesos de vinculación o actualización de clientes. Mediante el cual se analiza la existencia de documentos y se valida la información del certificado de existencia y representación legal de personas jurídicas. Como resultado, se reporta a la dirección de prevención de lavado de activos si se evidencia información u operación sospechosa. Para lo cual se rechaza la vinculación.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 53,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuente de lavado de activos, como el tráfico de drogas, ocultan esta condición delictiva mediante identidades falsas, incompletas o información inconsistente, constituyen o mantienen pólizas tales como vida, salud, entre otras, gestionadas a través de canales tradicionales y digitales, lo permitiendo la movilización de recursos ilícitos mediante productos y el método de simulación de operaciones y falsificación de documentos.",
+    "control": "Alertamiento sobre la veracidad de la información del cliente persona natural capturada en los formatos de conocimiento. Mediante el cual se identifican inconsistencias en la identidad o el perfil, indicando el uso de datos simulados o el ocultamiento de datos. Como resultado, se reporta a la dirección de prevención lavado de activos y transparencia corporativa. Para lo cual se rechaza la vinculación, restringiendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 54,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes registran a través de canales presenciales o digitales información incompleta de los datos de los beneficiarios en los formatos de conocimiento de cliente, impidiendo la trazabilidad del beneficiario y permitiendo a personas no identificadas, vinculadas con actividades de narcotráfico u otros delitos fuente de lavado de activos, reclamar indemnizaciones mediante la presentación de documentos falsos o la activación de siniestros simulados, utilizando productos aseguradores para legitimar recursos provenientes de delitos fuente de lavado de activos.",
+    "control": "Alertamiento de inconsistencias en la identidad o el perfil de los beneficiarios asegurados, presentando cumplimiento en las señales parametrizadas con las lógicas y datos diligenciados en los formatos de conocimiento del cliente y registradas en el repositorio documental. Mediante el cual se realiza análisis detallado del caso para determinar su posible relación con operaciones sospechosas. Como resultado, se genera informe de la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa. Para lo cual se activa el protocolo para restringir la asociación de beneficiarios y prevenir el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3,
+    "completado": true
+  },
+  {
+    "id": 55,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas jurídicas que, durante el proceso de vinculación o actualización por canales presenciales o digitales, omiten información clave sobre la identidad de los controlantes y/o composición accionaria, impidiendo la debida diligencia y permitiendo que estructuras societarias fachada, vinculadas con organizaciones delictivas, reclamen indemnizaciones mediante contratos simulados o siniestros ficticios, canalizando recursos ilícitos a través de pólizas como accidentes personales, grupo, grupo plan creciente, deudores entre otros ramos.",
+    "control": "Se genera un alertamiento automático en el aplicativo digital de vinculación de terceros cuando el beneficiario final presenta coincidencias en listas restrictivas, lo que conlleva la suspensión temporal del proceso de vinculación. Una vez el área comercial identifica la inconsistencia, se elabora un informe y se remite a la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa, quienes realizan el análisis y seguimiento correspondiente. Con base en los resultados, se decide la continuidad o el rechazo del proceso de vinculación, como medida preventiva frente al riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 56,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y Jurídicas que por medio de canales tradicionales o digitales modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial de cambios reales, los cuales utilizan herramientas como documentos falsificados y simulación de ingresos, lo cual les permite tener vigente pólizas del portafolio asegurador tales como vida, grupo, salud, entre otros ramos, ocultando fondos de origen ilícito mediante la manipulación deliberada de su perfil.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Cliente Persona Natural, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 57,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y Jurídicas que por medio de canales tradicionales o digitales modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial de cambios reales, los cuales utilizan herramientas como documentos falsificados y simulación de ingresos, lo cual les permite tener vigente pólizas del portafolio asegurador tales como vida, grupo, salud, entre otros ramos, ocultando fondos de origen ilícito mediante la manipulación deliberada de su perfil.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Cliente Persona Juridica, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 58,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales y Jurídicas que por medio de canales tradicionales o digitales modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial de cambios reales, los cuales utilizan herramientas como documentos falsificados y simulación de ingresos, lo cual les permite tener vigente pólizas del portafolio asegurador tales como vida, grupo, salud, entre otros ramos, ocultando fondos de origen ilícito mediante la manipulación deliberada de su perfil.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo de producto, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 59,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Tomadores personas naturales que incrementan de manera abrupta y significativa el valor asegurado en productos tales como accidentes personales, grupo, grupo plan creciente, deudores entre otros ramos, con un crecimiento superior al 175% respecto al periodo anterior, sin evidencia de cambios en su perfil financiero o patrimonial realizado por medio de canales, lo cual puede evidenciar la intención de inflar coberturas para simular siniestros y obtener indemnizaciones con recursos ilícitos.",
+    "control": "Verificar incrementos significativos en el valor acumulado asegurado por ramo para tomadores persona natural, al comparar los montos suscritos en las pólizas vigentes frente al periodo anterior. Se considera alerta cuando dicho valor supera el 160% del monto anterior, excluyendo los productos pertenecientes a subramos de bancaseguros, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 60,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas natural que reciben el pago en pólizas accidentes personales, grupo plan creciente, deudores, grupo educativo entre otros ramos, de un siniestro por un valor superior a $50.000.000 dentro de un periodo menor a tres meses desde la emisión de la póliza por canales digitales y tradicionales, lo que podría facilitar el uso del seguro como mecanismo para destinar recursos a delitos fuentes de lavado de activos mediante indemnizaciones simuladas.",
+    "control": "Verificar alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza el pago de un siniestro a una persona natural por un valor superior a $50.000.000, dentro de un periodo estrictamente menor a tres meses desde la emisión de la póliza, mediante la detección de indemnizaciones anticipadas sin historial que justifique la operación., si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 61,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes persona jurídica que reciben el pago el pólizas de accidentes personales, grupo plan creciente, deudores, grupo educativo entre otros ramos, de un siniestro por un valor superior a $100.000.000 dentro de un periodo menor a tres meses desde la emisión de la póliza por canales digitales y tradicionales, lo que podría facilitar el uso del seguro como mecanismo para destinar recursos a delitos fuentes de lavado de activos mediante indemnizaciones simuladas.",
+    "control": "Verificar alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza el pago de un siniestro a una persona jurídica por un valor superior a $100.000.000, dentro de un periodo estrictamente menor a tres meses desde la emisión de la póliza, mediante la detección de indemnizaciones anticipadas sin un historial que respalde la operación, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 62,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes que presentan reclamaciones de siniestros dentro de los tres meses posteriores a la emisión de la póliza de accidentes personales, grupo plan creciente, deudores, grupo educativo entre otros ramos, sin contar con un historial asegurador que respalde el evento, aprovechando las condiciones de los productos para simular indemnizaciones por medio de los canales digitales y utilizar estos recursos en delitos fuentes de lavado de activos.",
+    "control": "Verifica alertas automáticas parametrizadas en el aplicativo de monitoreo sobre pólizas vigentes, para identificar pagos de siniestros que se efectúan dentro de un periodo estrictamente menor a tres meses desde la fecha de emisión de la póliza, mediante la detección de reclamaciones tempranas que no presentan un historial asegurador que justifique el desembolso, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 63,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes que modifican los beneficiarios registrados en las pólizas de accidentes personales, grupo plan creciente, deudores, grupo educativo, entre otros ramos y, dentro de un periodo menor a noventa días, gestionando el pago de un siniestro, lo cual puede ser utilizado como mecanismo para desviar recursos hacia terceros, aprovechando canales digitales o presenciales para simular indeminizaciones.",
+    "control": "Verificación de alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se efectúa el pago de un siniestro a un tercero que no figura como tomador, beneficiario o relacionado en la póliza vigente, mediante la detección de desvíos en la destinación legítima de los pagos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 64,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes que modifican los beneficiarios registrados en las pólizas de accidentes personales, grupo plan creciente, deudores, grupo educativo, entre otros ramos y, dentro de un periodo menor a noventa días, gestionando el pago de un siniestro, lo cual puede ser utilizado como mecanismo para desviar recursos hacia terceros, aprovechando canales digitales o presenciales para simular indeminizaciones.",
+    "control": "Verificar alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se realiza un cambio de beneficiario y, dentro de un periodo estrictamente menor a noventa días, se presenta el pago de un siniestro, mediante la detección de modificaciones contractuales inusuales en la fase previa a una indemnización, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 65,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas Jurídicos  que, en un periodo igual o inferior a 90 días, contratan cinco o más seguros del mismo ramo asegurador tales como accidentes personales, grupo plan creciente, deudores, grupo educativo, entre otros ramos por medio de canales de ventas, destinados a cubrir terceros, evidenciando el uso de la compañía aseguradora como vehículo para legitimar recursos de origen ilícito mediante estrategias de dispersión de beneficiarios o fraccionamiento de primas, asociadas a delitos fuente de lavado de activos.",
+    "control": "Verificar alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando un cliente figura como tomador en más de cinco productos de alto riesgo activos por cada estrategia, o adquiere múltiples seguros en un corto periodo de tiempo para asegurar a diferentes terceros, mediante la detección de conductas que podrían implicar el uso indebido del aseguramiento como mecanismo de dispersión de fondos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 66,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes que efectúan pagos en efectivo sobre más de tres pólizas tales como accidentes personales, grupo plan creciente, deudores, grupo educativo entre otros ramos, sin justificación económica aparente, conducta que puede representar un esquema de fraccionamiento a través de canales presenciales y virtuales.",
+    "control": "Verificar clientes que presentan simultáneamente productos de alto riesgo, nacionalidades catalogadas como de alto riesgo, y que además hayan efectuado pagos presenciales por caja a más de tres pólizas vigentes, con la finalidad de identificar operaciones que puedan generar riesgo, mediante el fraccionamiento o dispersión de recursos a través de múltiples contratos de seguros, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 67,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes identificadas como personas expuestas políticamente que, tras la emisión de pólizas vida individual y vida conjunto, realizan pagos anticipados y recurrentes a más de dos productos de este tipo, sin justificación clara, para canalizar la entrada de múltiples pagos fraccionados desde diferentes canales, dificultando la identificación del origen de los fondos e integrando capitales de origen ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Verificar alerta cuando se detecta que una persona expuesta políticamente, ha realizado pagos de primas asociadas a más de dos pólizas distintas del ramo de seguros de vida con componente de ahorro. Esta condición se considera un patrón atípico por su frecuencia, si se evidencia información u operación sospechosa luego del análisis del contexto del tomador se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 68,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales o jurídicas que realizan tres o más aportes extraordinarios a una misma póliza de vida individual y vida conjunto dentro de los primeros 90 días desde su emisión, con montos individuales superiores a $500.000, operaciones que puede estar orientada a canalizar recursos de origen ilícito, utilizando el sistema asegurador como vehículo de legitimación de capitales.",
+    "control": "Verificar alerta cuando un cliente, persona natural o jurídica, realiza tres o más aportes extraordinarios asociados a una misma póliza de vida con componente de ahorro, dentro de los primeros 90 días desde su emisión, y cuyos montos individuales son superiores a el umbral definido, si se evidencia información u operación sospechosa luego del análisis del contexto del tomador se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 69,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales identificadas como personas expuestas políticamente que, durante la vigencia de pólizas de vida individual y vida conjunto, realizan aportes extraordinarios por medio de canales tradicionales o digitales por valores superiores a $1.280.951 sin justificación documentada ni trazabilidad clara frente a su perfil económico lo cual puede facilitar la canalización de capitales provenientes de delitos fuente del lavado de activos por medio de fraccionamiento, empresas fachada y contratos simulados.",
+    "control": "Verificar alerta cuando un cliente identificado como Persona Expuesta Políticamente realiza uno o más aportes extraordinarios a pólizas de vida individual o vida conjunto, por valores estrictamente superiores al umbral definido, sin contar con documentación que respalde el origen lícito de los fondos ni trazabilidad clara frente a su perfil económico, si se evidencia información u operación sospechosa luego del análisis del contexto del tomador se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 70,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales o jurídicas que realizan retiros de fondos en pólizas vida individual y vida conjunto por montos superiores a $25.000.000 o su equivalente en dólares (15.000), antes del vencimiento del producto, sin justificación económica clara, para retirar recursos por el canal digital e integrando capitales de origen ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Validar alerta cuando un cliente realiza un retiro del fondo de ahorro superior al umbral establecido respectivamente en dólares o pesos colombianos, mientras la póliza aún se encuentra vigente, si se evidencia información u operación sospechosa  luego del análisis del contexto del tomador se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 71,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales o jurídicas que cancelan anticipadamente pólizas de vida individual y vida conjunto del portafolio asegurador en un periodo inferior a 90 días desde la fecha de inicio de vigencia, especialmente cuando ocurre de forma recurrente y fuera de los motivos tradicionales de cancelación, facilitando la entrada y rápida salida de recursos de origen ilícito mediante operaciones contractuales que simulan transacciones por medio de canales virtuales o presenciales.",
+    "control": "Verificar alerta cuando un cliente, persona natural o jurídica, cancela anticipadamente pólizas de vida individual o vida conjunto en un plazo menor a 90 días desde su fecha de inicio de vigencia, adicionalmente se genera cambio de beneficiario, si se evidencia información u operación sospechosa luego del análisis del contexto del tomador se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 72,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales o jurídicas que, posterior a la emisión de la póliza de vida individual y vida conjunto, realizan pagos por canales al fondo de ahorro por un valor estrictamente mayor al pactado inicialmente, sin justificación clara, integrando capitales de origen ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Verificar alerta cuando un cliente, persona natural o jurídica, realiza pagos al fondo de ahorro por un valor estrictamente mayor al valor pactado como prima anual de la póliza de vida individual o vida conjunto. Esta situación, cuando no está respaldada por justificación financiera clara (como un incremento formal de cobertura, ingresos u objetivos de ahorro), dificulta la trazabilidad del origen de los fondos e incrementa el riesgo de integración de capitales ilícitos mediante transacciones que simulan aportes legítimos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 73,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes que solicitan la cancelación anticipada de pólizas de accidentes personales, grupo plan creciente, deudores, grupo educativo entre otros ramos, emitidas en un plazo menor a noventa días desde su inicio, sin una justificación válida, lo cual puede indicar una estrategia para interrumpir el contrato tras la entrada de recursos ilícitos por canales transaccionales y simular operaciones.",
+    "control": "Verificar sobre alertas automáticas parametrizadas en el aplicativo de monitoreo sobre las transacciones, para identificar cualquier actividad sospechosa o inusual, especialmente aquellas que siguen patrones de comportamiento atípicos cuando se presenta cambio de beneficiario en un periodo estrictamente menor a noventa días. se evidencia pago de siniestro, mediante simulacióones contractuales sin justificación aparente, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 74,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales que, en un periodo igual o inferior a 90 días, contratan tres o más seguros del mismo ramo asegurador tales como accidentes personales, grupo plan creciente, deudores, grupo educativo, entre otros ramos por medio de canales de ventas, destinados a cubrir terceros, evidenciando el uso de la compañía aseguradora como vehículo para legitimar recursos de origen ilícito mediante estrategias de dispersión de beneficiarios o fraccionamiento de primas, asociadas a delitos fuente de lavado de activos.",
+    "control": "Verificar alerta cuando un cliente, persona natural o jurídica, contrata tres o más pólizas activas del mismo ramo asegurador, como accidentes personales, grupo plan creciente, deudores o grupo educativo, en un periodo igual o inferior a 90 días, y los asegurados o beneficiarios asociados son terceros diferentes, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 75,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para el lavado de activos y para canalizar recursos provenientes de delitos contra el sistema financiero, tales como captación ilegal de recursos del público o extorsión.",
+    "causa": "Clientes personas naturales o jurídicas que acceden a nuevos productos del portafolio asegurador tales como de vida, autos, salud, accidentes entre otros ramos, y realizan operaciones en canales transaccionales, aprovechando funcionalidades no parametrizadas o no identificadas en los procesos de validación, como pagos fraccionados en diferentes cuentas o simulación de pagos utilizando empresas fachada, con el objetivo de canalizar fondos ilícitos provenientes de actividades de narcotráfico y corrupción administrativa.",
+    "control": "Identificar y validar potenciales eventos y alertas de alta exposición en la evaluación de riesgos en los proyectos presentados por el área de portafolio seguros, procesos o por el área de portafolio digital, mediante el análisis de variables como el objetivo, alcance, productos, canales, jurisdicciones o impacto en el conocimiento de la contraparte. Si se evidencia alguna anomalía, se generará un reporte interno a los líderes del proyecto y se adoptarán medidas correctivas específicas para subsanar las brechas identificadas y evitar la materialización de posibles eventos de lavado de activos. De no cerrar las brechas identificadas, no se generará el visto bueno para su salida a producción y se implementarán acciones preventivas adicionales.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 76,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para el lavado de activos y para canalizar recursos provenientes de delitos contra el sistema financiero, tales como captación ilegal de recursos del público o extorsión.",
+    "causa": "Clientes personas naturales y Jurídicas que por medio de canales tradicionales o digitales modifican su comportamiento transaccional e información financiera de forma atípica o sin justificación comercial de cambios reales, los cuales utilizan herramientas como documentos falsificados y simulación de ingresos, lo cual les permite tener vigente pólizas del portafolio asegurador tales como vida, grupo, salud, entre otros ramos, ocultando fondos de origen ilícito mediante la manipulación deliberada de su perfil.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo canal, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 77,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes que figuran como tomadores de productos tales como vida, salud, entre otros ramos, con nacionalidad o residencia en jurisdicciones categorizadas como de alto riesgo por organismos internacionales, que realizan pagos mediante canales tradicionales o digitales, lo cual puede evidenciar el uso del sistema asegurador para canalizar recursos de procedencia ilícita vinculados a delitos fuente del lavado de activos por medio de pagos encadenados o estructurados.",
+    "control": "Verificar mensualmente los tomadores de pólizas activas con productos clasificados como de alto riesgo, que además presenten nacionalidad o jurisdicción de residencia catalogada como de alto riesgo según listas emitidas por organismos internacionales, y que hayan realizado pagos recientes a través de canales presenciales como caja o recaudo empresarial, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 78,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alta exposición de riesgo catalogada por organismos internacionales que contratan pólizas de vida individual, accidentes personales, grupo plan creciente u otros ramos, a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta puede facilitar la canalización de recursos de origen ilícito mediante pagos anticipados o fraccionados.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Jurisdiccion, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 79,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alto riesgo por organismos internacionales que contratan pólizas de vida individual, accidentes personales, grupo plan creciente u otros ramos, a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta puede facilitar la canalización de recursos de origen ilícito mediante pagos anticipados o fraccionados.",
+    "control": "Validar alerta cuando un cliente, persona natural o jurídica, realiza pagos en efectivo o mediante mecanismos directos como caja o recaudo empresarial, y está domiciliado, residenciado, registrado o nacionalizado en una jurisdicción clasificada como de alto riesgo por el Grupo de Acción Financiera Internacional u otros organismos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 80,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada en operaciones relacionadas de lavado de activos o participe en operaciones delictivas contra la Administración Pública, corrupción, soborno transnacional o desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Proveedores o contrapartes que, mediante el uso de canales institucionales como la contratación directa y el sistema de pagos empresariales, buscan vincularse con la aseguradora con el fin de legitimar recursos ilícitos provenientes de redes de lavado de activos, utilizando empresas fachada para ocultar el origen de los fondos. Esta conducta combina factores contratos empresariales, canal institucional y jurisdicción de alta exposición lo que incrementa la probabilidad de que la compañía sea utilizada como vehículo para integrar capitales ilícitos en el sistema financiero.",
+    "control": "Validar los datos descritos en el formato de inscripción de proveedores, sean personas naturales o jurídicas, así como la integridad de los documentos anexos exigidos, con el fin de asegurar la consistencia y suficiencia de la información en el proceso de vinculación, si se evidencia información negativa o adversa se realiza reporte a dirección de prevención de lavado de activos y transparencia corporativa, quienes realizan respectivo análisis y se activa protocolo de no continuidad del acuerdo contractual y posible reportes a la unidad de información y análisis financiero.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 1
+  },
+  {
+    "id": 81,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada en operaciones relacionadas de lavado de activos o participe en operaciones delictivas contra la Administración Pública, corrupción, soborno transnacional o desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Funcionarios que participan en la aprobación de pagos de siniestros o en la vinculación de intermediarios sin los debidos filtros, facilitando un esquema de colusión interna para validar pagos a beneficiarios ficticios o canalizar comisiones irregulares utilizando su rol funcional y el acceso al sistema de gestión de siniestros para legitimar recursos ilícitos provenientes de la corrupción, a través de manipulaciones deliberadas del flujo de aprobación.",
+    "control": "Verificación de las alertas automáticas generadas sobre funcionarios con coincidencias en la base de terceros restringidos, mediante el monitoreo oportuno de posibles vínculos sensibles dentro de la organización, luego del análisis de las variables y marcaciones, si se evidencia información u operación sospechosa se realiza informe interno al oficial de cumplimiento y suplente y al área de talente humano para iniciar proceso de posible desvinculación, disminuyendo así la probabilidad de ocurrencia o el impacto de escenarios de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 82,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que, tras la apertura de una póliza con componente de ahorro, realiza el retiro anticipado de recursos por un monto superior a $25.000.000 dentro de los primeros 90 días de vigencia del producto y antes de su vencimiento, sin una justificación económica consistente con su perfil financiero, aprovechando la estructura del fondo de ahorro para ingresar y retirar recursos en un corto periodo de tiempo, mediante operaciones que simulan decisiones financieras legítimas pero que pueden facilitar la movilización o integración de recursos de origen ilícito dentro del sistema asegurador.",
+    "control": "Verificar alertamiento generado cuando un cliente realiza el retiro de recursos del fondo de ahorro por un monto superior a $25.000.000 COP antes del vencimiento de la póliza y dentro de los primeros 90 días desde su apertura, realizando análisis del comportamiento financiero del cliente, la trazabilidad de los recursos aportados y la coherencia de la operación frente al perfil económico y características del producto contratado. Si se evidencia una operación inusual o inconsistencias en la justificación del retiro anticipado, se realiza reporte interno al oficial de cumplimiento y se realiza reporte a la unidad de análisis e información financiera, previniendo así posibles mecanismos de movilización o integración de recursos de origen ilícito dentro del sistema asegurador.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 83,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que reporta incrementos significativos en sus ingresos declarados frente al periodo anterior, superiores al 50% y con una variación mayor a $5.000.000 COP, sin que exista una justificación económica verificable o un cambio evidente en su actividad económica, lo cual puede evidenciar la manipulación o actualización estratégica de la información financiera con el fin de aparentar una mayor capacidad económica, permitiendo justificar el ingreso o movilización de recursos de origen ilícito dentro del sistema financiero o asegurador mediante operaciones que simulan coherencia con el perfil económico del cliente.",
+    "control": "Verificar alertamiento generado por desviaciones financieras inusuales en el perfil económico del cliente cuando el ingreso reportado presenta un incremento superior al 50% frente al periodo anterior y la diferencia es mayor a $5.000.000 COP, realizando análisis comparativo de la información financiera declarada, su actividad económica y la coherencia con su comportamiento transaccional dentro de los productos contratados. Si se evidencia información inconsistente o no justificada, se realiza reporte interno al oficial de cumplimiento y se realiza reporte a la unidad de análisis e información financiera para prevenir el posible uso del sistema financiero o asegurador para el ocultamiento o integración de recursos de origen ilícito.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 84,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que realiza pagos en efectivo por valores superiores a $10.000.000 correspondientes al pago de primas o aportes asociados a productos con componente de ahorro, sin que exista una justificación económica consistente con su perfil financiero o con los canales de pago habituales del cliente, aprovechando el uso del efectivo para ingresar recursos al sistema asegurador mediante operaciones que aparentan ser pagos legítimos del producto, dificultando la trazabilidad del origen de los fondos y facilitando la posible integración de recursos de procedencia ilícita dentro del sistema financiero o asegurador.",
+    "control": "Verificar alertamiento generado cuando un cliente realiza una transacción en efectivo superior a $10.000.000 correspondiente al pago de una prima o aporte al componente de ahorro de su producto, realizando análisis de la trazabilidad de la operación, el canal de pago utilizado y la coherencia del monto frente al perfil económico y comportamiento transaccional del cliente. Si se evidencia una operación inusual o inconsistencias en la justificación del pago realizado en efectivo, se realiza reporte interno al oficial de cumplimiento y se realiza reporte a la unidad de análisis e información financiera para prevenir posibles mecanismos de ingreso de capitales de procedencia ilícita dentro del sistema asegurador.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 85,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que contrata productos clasificados como de alto riesgo y realiza el pago de primas cuyo valor no guarda relación con su capacidad financiera declarada, evidenciándose que el valor de la prima prorrateado según el número de pagos anuales supera la disponibilidad financiera resultante entre los ingresos y egresos reportados, sin una justificación económica verificable, lo cual puede indicar la utilización del producto asegurador para ingresar recursos de origen desconocido mediante pagos que no son consistentes con el perfil económico del tomador, facilitando la posible integración de capitales de procedencia ilícita dentro del sistema asegurador.",
+    "control": "Verificar alertamiento generado cuando el valor de la prima de un producto clasificado como de alto riesgo no guarda relación con la capacidad financiera del tomador, evaluando la razón financiera de liquidez calculada a partir del valor de la prima dividido entre el número de pagos anuales frente a la diferencia entre ingresos y egresos reportados por el cliente. La alerta se activa cuando el valor resultante supera la disponibilidad financiera declarada, excluyendo los casos en los que los ingresos y egresos sean inferiores a $100.000. Si se evidencia inconsistencia entre la capacidad financiera del cliente y el valor de la prima contratada, se realiza reporte interno al oficial de cumplimiento y se realiza reporte a la unidad de análisis e información financiera para prevenir posibles mecanismos de ingreso de recursos de origen ilícito al sistema asegurador.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 86,
+    "riesgo": "Posibilidad de que Seguros Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica, o un tercero relacionado, que realiza consignaciones en divisas en entidades financieras con el propósito de que dichos recursos sean aplicados posteriormente al pago de primas o aportes asociados a pólizas de Seguros Bolívar, sin que exista una justificación económica clara o coherente con su perfil financiero, actividad económica o comportamiento transaccional habitual, aprovechando el uso de operaciones en moneda extranjera y su conversión al sistema financiero local para canalizar recursos de origen desconocido, mediante operaciones que aparentan ser pagos legítimos de productos aseguradores pero que pueden facilitar la integración o movilización de capitales de procedencia ilícita dentro del sistema asegurador.",
+    "control": "Verificar alertamiento generado cuando un tomador o un tercero realiza operaciones en divisas cuyos recursos son consignados en una entidad bancaria para ser aplicados posteriormente al pago de primas o aportes asociados a pólizas de Seguros Bolívar, realizando análisis de la trazabilidad de los recursos, la coherencia de la operación frente al perfil financiero del cliente y la relación del tercero con el tomador de la póliza. Si se evidencia una operación inusual o inconsistencias en la justificación del origen o destino de los recursos en moneda extranjera, se realiza reporte interno al oficial de cumplimiento y se activa procedimiento de seguimiento y debida diligencia ampliada con el fin de validar el origen de los fondos para prevenir posibles mecanismos de canalización o integración de recursos de procedencia ilícita dentro del sistema asegurador.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 87,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes que modifican su perfil transaccional informando datos errados para simular aumentos de ingresos, ubicación, cambio en otras variables y justificar la adquisición de titulos de capitalización por montos altos, realizadas a través de canales tradicionales, sin evidencia legítima, utilizando los productos como instrumentos para ocultar el origen ilícito de recursos provenientes del narcotráfico y otros delitos, mediante diversas modalidades entre estas el pitufeo.",
+    "control": "Verificar los alertamientos cuando se detecte variación en el aumento del nivel de riesgo, a través de la revisión de reportes automáticos generados por el sistema de score. Si se confirma el cambio, se solicita formalmente a los directores comerciales la actualización del conocimiento intensificado, si se evidencia información u operación inusual luego de la solicitud de actualización y se identifica que la información presenta inconsistencias o no entrega los datos actualizados se realiza reporte a la unidad de información y análisis financiera e internamente se activa protocolo de cancelación o no renovación del producto de acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 88,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuentes de lavado de activos, que ocultan esta condición delictiva mediante identidades falsas, brindando información inconsistente o incompleta y quienes a su vez constituyen o mantienen títulos de capitalización, gestionados a través de canales tradicionales y digitales, lo que permite la movilización de recursos ilícitos mediante fraccionamiento o pitufos.",
+    "control": "Validación de alertas de clientes tomadores y asegurados contra listas restrictivas oficiales y registros nuevos actualizados en listas tomados de fuentes tales como Organización de las Naciones Unidas, Oficina de Control de Activos Extranjeros del Departamento del Tesoro de los Estados Unidos para la detección de perfiles delictivos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 89,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuentes de lavado de activos, que ocultan esta condición delictiva mediante identidades falsas, brindando información inconsistente o incompleta y quienes a su vez constituyen o mantienen títulos de capitalización, gestionados a través de canales tradicionales y digitales, lo que permite la movilización de recursos ilícitos mediante fraccionamiento o pitufos.",
+    "control": "Validación sistémica al identificar alertas de inconsistencias sobre la veracidad de identidad y de la completitud de la información del cliente en el proceso de vinculación, si se evidencia información con posible inconsistencias luego del análisis de variables se realiza reporte a la dirección de prevención de lavado de activos y transparencia corporativa para su análisis detallado y/o se declina el proceso contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 90,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes con investigaciones relacionadas con delitos fuentes de lavado de activos, que ocultan esta condición delictiva mediante identidades falsas, incompleta o información inconsistente, constituyen o mantienen títulos de capitalización, gestionadas a través de canales tradicionales y digitales, lo que permite la movilización de recursos ilícitos mediante productos por medio del método de simulación de operaciones y falsificación de documentos..",
+    "control": "Validar la identidad de personas naturales mediante la herramienta digital dispuesta en la URL del proceso de vinculación o actualización. Cuando el sistema no permite validar la identidad luego de realizar análisis de variables, se genera un informe interno o documento automático para la dirección de prevención de lavado de activos y transparencia corporativo para su respectivo análisis, si no es posible validar la idoneidad del cliente se rechaza la vinculación.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 1
+  },
+  {
+    "id": 91,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas que, durante los procesos de vinculación o actualización por canales digitales y tradicionales, no superan validación de plena identidad, evidenciando riesgos de suplantación o el uso de estructuras societarias fachada para acceder al sistema por medio de títulos de capitalización, facilitando así la legitimación de capitales ilícitos desde el inicio de la relación contractual.",
+    "control": "Validación de identidad del representante legal o apoderado del cliente persona jurídica en la herramienta digital URL del proceso de vinculación o actualización. Esta herramienta aplica validación de identidad para identificar posible suplantación y la vinculación de empresas fachada, luego del análisis de variables, se genera un informe interno automático documentado para la dirección de prevención de lavado de activos y transparencia corporativo para su respectivo análisis, si no es posible validar la idoneidad del cliente se rechaza la vinculación.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 1
+  },
+  {
+    "id": 92,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Representantes legales o apoderados de clientes personas jurídicas que, durante los procesos de vinculación o actualización por canales digitales y tradicionales, no superan validación de plena identidad, evidenciando riesgos de suplantación o el uso de estructuras societarias fachada para acceder al sistema por medio de títulos de capitalización, facilitando así la legitimación de capitales ilícitos desde el inicio de la relación contractual.",
+    "control": "Verificar existencia de documentos y validar datos del certificado de existencia y representación legal de personas jurídicas, una vez se identifique alertas sobre patrones de empresas fachada o  simulación de perfil, tales como inconsistencias en objeto social, datos simulados o incorrectos, durante los procesos de vinculación o actualización de clientes, se realiza análisis de variables, si se evidencia información u operación sospechosa se realiza reporte a la dirección de prevención de lavado de activos y se rechaza vinculación previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 93,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes naturales o jurídicos con investigaciones relacionadas con delitos fuentes de lavado de activos, que ocultan esta condición delictiva mediante identidades falsas, brindando información inconsistente o incompleta y quienes a su vez constituyen o mantienen títulos de capitalización, gestionados a través de canales tradicionales y digitales, lo que permite la movilización de recursos ilícitos mediante fraccionamiento o pitufos.",
+    "control": "Validar veracidad de la información del cliente persona natural capturada en los formatos de conocimiento y registrada en el repositorio documental, para identificar inconsistencias en la identidad o el perfil que puedan indicar el uso de datos simulados o el ocultamiento de datos, si se evidencia información u operación sospechosa se realiza reporte a direccion de prevencion lavado de activos y transparencia coporativa y se rechaza vinculación previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 1
+  },
+  {
+    "id": 94,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes que registran a través de canales presenciales o digitales información incompleta de los datos de los beneficiarios en el formatos conocimiento de cliente, lo cual impide la trazabilidad del beneficiario y permite que personas no identificadas, vinculadas con actividades de narcotráfico u otros delitos, reclamen rescisiones de títulos mediante la presentación de documentos o la simulación de operaciones, utilizando títulos de capitalización para legitimar recursos ilícitos.",
+    "control": "Verificar alertas generadas por inconsistencias en la identidad o el perfil de los beneficiarios asegurados, diligenciadas en los formatos de conocimiento del cliente y registradas en el repositorio documental, tales como suplantación de identidad, datos errados o indicios de ocultamiento. Una vez identificada la señal de alerta, se genera informe de la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa, se realiza análisis detallado del caso para determinar su posible relación con operaciones sospechosas y su posterior reporte a la unidad de información y análisis financiero, activando así el protocolo para evitar la asociación de beneficiarios para prevenir el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 95,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas jurídicas que, durante el proceso de vinculación o actualización por canales presenciales o digitales, omiten información clave sobre la identidad de los controlantes y/o composición accionaria, impidiendo la debida diligencia y permitiendo que estructuras societarias fachada, vinculadas con organizaciones delictivas, suscriben contratos y ejecutan operaciones simuladas mediante títulos de capitalización, canalizando recursos ilícitos.",
+    "control": "Se genera un alertamiento automático en el aplicativo digital de vinculación de terceros cuando el beneficiario final presenta coincidencias en listas restrictivas, lo que conlleva la suspensión temporal del proceso de vinculación. Una vez el área comercial identifica la inconsistencia, se elabora un informe y se remite a la Dirección de Prevención de Lavado de Activos y Transparencia Corporativa, quienes realizan el análisis y seguimiento correspondiente. Con base en los resultados, se decide la continuidad o el rechazo del proceso de vinculación, como medida preventiva frente al riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 96,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y jurídicas que, mediante el uso de canales tradicionales o digitales, modifican deliberadamente su comportamiento transaccional de forma atípica, simulando cambios en su perfil comercial sin justificación real. Esto les permite mantener vigente títulos de capitalización y ocultar fondos de origen ilícito provenientes de actividades relacionadas con el narcotráfico, utilizando herramientas como documentos falsificados y empresas fachada para justificar los movimientos financieros.",
+    "control": "Revisar anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Cliente Persona Natural, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 97,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada por personas naturales o jurídicas como instrumento para el lavado de activos o para el ocultamiento de activos o recursos ilícitos en el desarrollo propio de la Compañía.",
+    "causa": "Clientes personas naturales y jurídicas que, mediante el uso de canales tradicionales o digitales, modifican deliberadamente su comportamiento transaccional de forma atípica, simulando cambios en su perfil comercial sin justificación real. Esto les permite mantener vigente títulos de capitalización y ocultar fondos de origen ilícito provenientes de actividades relacionadas con el narcotráfico, utilizando herramientas como documentos falsificados y empresas fachada para justificar los movimientos financieros.",
+    "control": "Revisar anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Cliente Persona Juridica, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 98,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales y jurídicas que, mediante el uso de canales tradicionales o digitales, modifican deliberadamente su comportamiento transaccional de forma atípica, simulando cambios en su perfil comercial sin justificación real. Esto les permite mantener vigente títulos de capitalización y ocultar fondos de origen ilícito provenientes de actividades relacionadas con el narcotráfico, utilizando herramientas como documentos falsificados y empresas fachada para justificar los movimientos financieros.",
+    "control": "Revisar anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo de producto, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 99,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales o jurídicas que, tras la rescisión de títulos de capitalización, solicitan dicha devolución total o parcial mediante canales virtuales, presentando información negativa o antecedentes relacionados con delitos fuente, aprovechado esta conducta para canalizar recursos ilícitos mediante operaciones formalmente justificadas, ocultando vínculos con delitos fuente como corrupción o enriquecimiento ilícito, y utilizando el componente contractual como fachada para legitimar capitales en etapas tempranas del ciclo del producto.",
+    "control": "Verificar identidad del receptor del pagos por devolución de cuotas o rescisión, para identificar veracidad de la información. En caso de hallar alertas sobre información inconsistente se debe reportar a la dirección de prevención de lavado de activos, quien realiza el análisis de las variables e información reportada para determinar si el pago debe ser realizado o no y realizar el posible reporte de operación sospechosa a la Unidad de Información y Análisis Financiero cuando aplique y activa el protocolo de posible cancelación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 100,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes personas naturales identificadas como personas expuestas políticamente que, tras la emisión de títulos de capitalización, realizan pagos frecuentes a más de dos productos de este tipo, sin justificación clara, lo cual genera un patrón atípico de comportamiento transaccional, mediante el ingreso de posibles recursos públicos que son desviados a cuentas de personas naturales desde diferentes canales, dificultando la trazabilidad del origen de los fondos e integrando capitales producto de origen de enriquecimiento ilícito mediante movimientos encadenados que simulan operaciones legítimas.",
+    "control": "Verificar alertamiento en cuanto a los registros que detonaron con patrones de comportamiento atípicos en transaccionalidad en los escenarios cuando el cliente es políticamente expuesto y hace pagos a más de dos títulos con componente de inversion, de forma anticipada y con alta frecuencia tras la apertura, Una vez realizado el análisis se establece si corresponde a una operación usual o inusual justificada o si por el contrario es una operación sospechosa que posteriormente debe ser reportada a la Unidad de Información y Análisis Financiero y activa el protocolo de posible cancelación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 101,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que realiza aportes por medio de canales digitales y tradicionales por un valor inusual sin relación con su perfil transaccional a títulos de capitalización, sin justificación clara ni respaldo económico verificable, aprovechando la característica de ahorro y capitalización del producto, mediante la modalidad de solicitud de devolución de los recursos aportados con la finalidad generar el lavado de recursos.",
+    "control": "Verificar alertas sobre actividad sospechosa o inusual, especialmente aquellas que siguen los patrones de comportamiento atípicos de los clientes tales como pagos de cuotas por valor mayor y en menos de 90 días de apertura del título, Una vez realizado el análisis se establece si corresponde a una operación usual o inusual justificada o si por el contrario es una operación sospechosa que posteriormente debe ser reportada a la Unidad de Información y Análisis Financiero y activa el protocolo de posible cancelación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 102,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Clientes persona jurídica que desarrolla actividades económicas catalogadas como de alta exposición a delitos de lavado de activos, que figura como titulares en productos de capitalización y presenta información negativo o antecedentes, utilizando canales presenciales para generar operaciones simuladas, mediante recreación de obligaciones contractuales con el fin de canalizar recursos ilícitos.",
+    "control": "Verificar alertas automáticas parametrizadas en el aplicativo de monitoreo sobre empresas con actividades económicas de alto riesgo y que presentan marcación de restringidos, Una vez realizado el análisis se establece si corresponde a una operación usual o inusual justificada o si por el contrario es una operación sospechosa que posteriormente debe ser reportada a la Unidad de Información y Análisis Financiero, posteriormente se activa el protocolo de posible desvinculación y/o cancelación de productos.",
+    "calif_riesgo": 3,
+    "calif_causa": 1,
+    "calif_control": 1
+  },
+  {
+    "id": 103,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada para canalizar recursos provenientes de delitos contra el sistema financiero, tales como captación ilegal de recursos del público o extorsión.",
+    "causa": "Clientes personas naturales o jurídicas que acceden a nuevos productos como títulos de capitalización y realizan operaciones en canales transaccionales, aprovechando funcionalidades no parametrizadas o no identificadas en los procesos de validación, para canalizar fondos ilícitos mediante pagos fraccionados en montos cercanos a los umbrales de reporte, simulación de pagos con empresas fachada y uso de jurisdicciones de alto riesgo, con el objetivo de ocultar el origen ilícito del dinero proveniente de actividades de narcotráfico.",
+    "control": "Identificar y validar potenciales eventos y alertas de alta exposición en la evaluación de riesgos en los proyectos presentados por el área de portafolio seguros, procesos o por el área de portafolio digital, mediante el análisis de variables como el objetivo, alcance, productos, canales, jurisdicciones o impacto en el conocimiento de la contraparte. Si se evidencia alguna anomalía, se generará un reporte interno a los líderes del proyecto y se adoptarán medidas correctivas específicas para subsanar las brechas identificadas y evitar la materialización de posibles eventos de lavado de activos. De no cerrar las brechas identificadas, no se generará el visto bueno para su salida a producción y se implementarán acciones preventivas adicionales.",
+    "calif_riesgo": 1,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 104,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada para canalizar recursos provenientes de delitos contra el sistema financiero, tales como captación ilegal de recursos del público o extorsión.",
+    "causa": "Clientes personas naturales y jurídicas que, mediante el uso de canales tradicionales o digitales, modifican deliberadamente su comportamiento transaccional de forma atípica, simulando cambios en su perfil comercial sin justificación real. Esto les permite mantener vigente títulos de capitalización y ocultar fondos de origen ilícito provenientes de actividades relacionadas con el narcotráfico, utilizando herramientas como documentos falsificados y empresas fachada para justificar los movimientos financieros.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo canal, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 1,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 105,
+    "riesgo": "Posibilidad de que Capitalizadora Bolivar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con productos tales como títulos de capitalización, con nacionalidad o residencia en jurisdicciones categorizadas como de alta exposición a delitos fuentes de lavado, que realizan aportes de alto valor mediante canales tradicionales o digitales, lo cual puede evidenciar el uso de la capitalizadora para canalizar recursos de procedencia ilícita mediante simulación de operaciones en jurisdicciones de alto riesgo.",
+    "control": "Verificar mensualmente los titulares, que presenten nacionalidad o jurisdicción de residencia catalogada como de alta exposición según listas emitidas por organismos internacionales, y que hayan realizado pagos, si se evidencia información u operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de posible cancelación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 106,
+    "riesgo": "Posibilidad de que Capitalizadora Bolivar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alta exposición de riesgo catalogada por organismos internacionales que contratan títulos de capitalización, a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta puede facilitar la canalización de recursos de origen ilícito mediante pagos anticipados o fraccionados.",
+    "control": "Revisar alertas detectadas o anomalías detectadas por el modelo de segmentación mediante reglas y umbrales predefinidos, enfocado en el aumento de su perfil de riesgo entre diferentes segementos. Este control aplica específicamente para el factor de riesgo Jurisdiccion, luego del analisis de variables, si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 107,
+    "riesgo": "Posibilidad de que Capitalizadora Bolivar sea utilizada como instrumento para realizar operaciones destinadas a la financiación de grupos terroristas, grupos armados o la proliferación de armas de destrucción masiva en zonas geográficas con presencia o influencia de actores armados ilegales.",
+    "causa": "Clientes con residencia en jurisdicciones clasificadas como de alto riesgo por organismos internacionales que contratan títulos de capitalización, a través de canales tradicionales y digitales, sin soportes documentales proporcionales a su perfil económico. Esta conducta puede facilitar la canalización de recursos de origen ilícito mediante pagos anticipados o fraccionados.",
+    "control": "Validar alerta cuando un cliente, persona natural o jurídica, realiza pagos en efectivo en caja o recaudo empresarial, si se evidencia por monto mayor al umbral parametrizado si se evidencia operación sospechosa se realiza reporte a la unidad de información y análisis financiero e internamente se ejecuta marcación de cliente y se activa protocolo de cancelación o no renovación del producto o acuerdo contractual previniendo así el riesgo de lavado de activos y activa el protocolo de posible cancelación del producto.",
+    "calif_riesgo": 3,
+    "calif_causa": 3,
+    "calif_control": 3
+  },
+  {
+    "id": 108,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada en operaciones relacionadas de lavado de activos o participe en operaciones delictivas contra la Administración Pública, corrupción, soborno transnacional o desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Proveedores o contrapartes que intentan vincularse con la Capitalizadora mediante contratos, con el fin de legitimar recursos ilícitos obtenidos por redes de lavado de activos, utilizando canales institucionales como la contratación directa y el sistema de pagos empresariales para ocultar el origen de los fondos a través de empresas fachada.",
+    "control": "Validar los datos descritos en el formato de inscripción de proveedores, sean personas naturales o jurídicas, así como la integridad de los documentos anexos exigidos, con el fin de asegurar la consistencia y suficiencia de la información en el proceso de vinculación, si se evidencia información negativa o adversa se realiza reporte a dirección de prevención de lavado de activos y transparencia corporativa, quienes realizan respectivo análisis y se activa protocolo de no continuidad del acuerdo contractual y posible reportes a la unidad de información y análisis financiero.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 1
+  },
+  {
+    "id": 109,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada en operaciones relacionadas de lavado de activos o participe en operaciones delictivas contra la Administración Pública, corrupción, soborno transnacional o desvío de recursos del Estado y corrupción privada o administración desleal.",
+    "causa": "Funcionarios que participan en la aprobación de pagos de siniestros o en la vinculación de intermediarios sin los debidos filtros, facilitando un esquema de colusión interna para validar pagos a beneficiarios ficticios o canalizar comisiones irregulares utilizando su rol funcional y el acceso al sistema de gestión de resciciones para legitimar recursos ilícitos provenientes de la corrupción, a través de manipulaciones deliberadas del flujo de aprobación.",
+    "control": "Verificación de las alertas automáticas generadas sobre funcionarios con coincidencias en la base de terceros restringidos, mediante el monitoreo oportuno de posibles vínculos sensibles dentro de la organización, luego del análisis de las variables y marcaciones,  si se evidencia información u operación sospechosa se realiza informe interno al oficial de cumplimiento y suplente y al área de talente humano para iniciar proceso de posible desvinculación, disminuyendo así la probabilidad de ocurrencia o el impacto de escenarios de lavado de activos.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  },
+  {
+    "id": 110,
+    "riesgo": "Posibilidad de que Capitalizadora Bolívar sea utilizada como instrumento para realizar operaciones relacionadas con el lavado de activos, derivado de delitos ambientales como la deforestación, el tráfico ilegal de vida silvestre, la minería ilegal o el hurto de hidrocarburos.",
+    "causa": "Cliente persona natural o jurídica que cancela un producto de capitalización, solicita el retiro de los recursos asociados y posteriormente realiza la apertura de un nuevo producto dentro de un plazo inferior a 90 días, generando ciclos reiterados de cancelación y vinculación que pueden ser utilizados para movilizar o reciclar recursos dentro del sistema asegurador, mediante operaciones sucesivas que simulan decisiones financieras legítimas pero que en realidad buscan facilitar la circulación y aparente legitimación de recursos de origen ilícito.",
+    "control": "Verificar alertamiento asociado a clientes que cancelan un producto, solicitan el retiro de los recursos asociados y posteriormente realizan la apertura de un nuevo producto dentro de un plazo inferior a 90 días, efectuando análisis del comportamiento financiero del cliente, la trazabilidad de los recursos retirados y las condiciones de la nueva vinculación. Si se evidencia un patrón transaccional inusual o inconsistencias en la justificación de la operación, se realiza reporte interno al oficial de cumplimiento y se activa procedimiento de seguimiento y validación de la operación con el fin de prevenir posibles mecanismos de movilización de recursos dentro del sistema asegurador.",
+    "calif_riesgo": 3,
+    "calif_causa": 2,
+    "calif_control": 2
+  }
+]

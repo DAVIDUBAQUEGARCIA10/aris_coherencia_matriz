@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\1014282242\\\\Desktop\\\\aris-coherencia-matriz\" -Recurse)",
+      "Bash(Select-Object -First 30)",
+      "Bash(python analizar.py)",
+      "Bash(py analizar.py)",
+      "PowerShell(Copy-Item 'C:\\\\Users\\\\1014282242\\\\Desktop\\\\aris-coherencia-matriz\\\\.env.example' -Destination 'C:\\\\Users\\\\1014282242\\\\Desktop\\\\aris-coherencia-matriz\\\\.env' -Force)",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue)",
+      "Bash(node -e \"const d=require\\('./data.json'\\); const r=d.find\\(x=>String\\(x.id\\)==='1'\\); console.log\\('id1 guardado -> R:'+r.calif_riesgo+' C:'+r.calif_causa+' Ctrl:'+r.calif_control\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(ls -la data.json bd-matriz-estructura.xlsx)",
+      "Bash(node -e \"const d=require\\('./data.json'\\); const r=d.find\\(x=>String\\(x.id\\)==='1'\\); console.log\\('Registro 1 actual en data.json:'\\); console.log\\('  R:'+r.calif_riesgo+' C:'+r.calif_causa+' Ctrl:'+r.calif_control\\); console.log\\('  Causa:', r.causa.substring\\(0,90\\)+'...'\\);\")",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:3000/api/completar\" -Method POST -Body '{\"id\":2,\"completado\":false}' -ContentType \"application/json\" -UseBasicParsing -TimeoutSec 15)",
+      "Bash(node test-sistema.js)",
+      "Bash(rm -f test-guardar.js)",
+      "Bash(rm -f test-sync.js)"
+    ]
+  }
+}
